@@ -1,0 +1,16 @@
+{% load cms_tags sekizai_tags %}
+
+{% addtoblock indicator %}
+    <li data-target="#pico-carousel" data-slide-to="{{ forloop.counter }}" class="{% if forloop.first %}active{% endif %}"></li>
+    <li data-target="#pico-carousel" data-slide-to="{{ forloop.counter }}" class="{% if forloop.first %}active{% endif %}"></li>
+{% endaddtoblock indicator %}
+
+{% addtoblock item %}
+    <div class="item {% if forloop.first %}active{% endif %}">
+        <img src="{{ instance.image.url }}" alt="{{ instance.img_alt }}">
+        <div class="carousel-caption">
+            <h3>{{ instance.item_caption }}</h3>
+            <p>{{ instance.desc_caption }}</p>
+        </div>
+    </div>
+{% endaddtoblock item %}
