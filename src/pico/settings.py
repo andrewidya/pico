@@ -151,7 +151,7 @@ INSTALLED_APPS = (
     # Aldryn bootstrap 3
     'aldryn_bootstrap3',
     'south',
-    'reversion',
+    #'reversion',
     'pico',
     'pico_column',
     'pico_carousel',
