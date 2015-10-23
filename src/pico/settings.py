@@ -147,7 +147,6 @@ INSTALLED_APPS = (
     'meta',
     'meta_mixin',
     #'admin_enhancer',
-    'djangocms_blog',
     # end blog supportr
     # Aldryn bootstrap 3
     'aldryn_bootstrap3',
