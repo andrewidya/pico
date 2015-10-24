@@ -196,6 +196,7 @@ CMS_PLACEHOLDER_CONF = {}
 
 # databases section
 DATABASES = {}
+import urlparse
 if 'OPENSHIFT_MYSQL_DB_URL' in os.environ:
     url = urlparse.urlparse(os.environ.get('OPENSHIFT_MYSQL_DB_URL'))
 
