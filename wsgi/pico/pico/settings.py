@@ -268,3 +268,8 @@ THUMBNAIL_PROCESSORS = (
 #   'category': r'^post/(?P<category>\w[-\w]*)/(?P<slug>\w[-\w]*)/$',
 #    'slug': r'^post/(?P<slug>\w[-\w]*)/$',
 #}
+
+"""
+DjangoCMS Blog Global setting
+
+"""

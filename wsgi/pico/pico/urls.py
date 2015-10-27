@@ -17,6 +17,7 @@ urlpatterns = i18n_patterns('',
     url(r'^select2/', include('django_select2.urls')),
     url(r'^', include('cms.urls')),
     url(r'^taggit_autosuggest/', include('taggit_autosuggest.urls')),
+    url(r'djangocms_blog/', include('djangocms_blog.urls', namespace='djangocms_blog')),
 )
 
 # This is only needed when using runserver.
