@@ -1,0 +1,53 @@
+@font-face {
+	font-family: 'Ngrawit Web';
+	src: url('../fonts/NgrawitWeb.ttf');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'RighmaSsiddhi';
+	src: url('../fonts/RighmaSsiddhi.ttf');
+}
+
+h1 {
+	font-family: 'Ngrawit Web', open-sans;
+	font-weight: inherit;
+}
+
+p {
+	font-family: 'RighmaSsiddhi';
+	font-weight: inherit;
+	font-size: 1.2em;
+}
+
+span {
+	font-family: 'RighmaSsiddhi';
+}
+
+.cover-wrapper {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+.cover-container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.cover-inner {
+	width: 100%;
+	text-align: center;
+	img {
+		max-width: 100%;
+	}
+
+	.greetings {
+		font-size: 2.5em;
+		line-height: 1em;
+	}
+
+	.bottom {
+		margin: 10px 0 0 0;
+	}
+}

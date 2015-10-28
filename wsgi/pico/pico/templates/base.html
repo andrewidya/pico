@@ -10,6 +10,7 @@
     </head>
     <body>
         {% cms_toolbar %}
+        {% block header %}
         <div class="container">
             <div class="navbar navbar-default" role="navigation">
                 <div class="navbar-header">
@@ -27,6 +28,7 @@
                     </ul>
                 </div>
             </div>
+        {% endblock header %}
             {% block content %}{% endblock content %}
             {% block footer %}
                 {% placeholder "footer" %}
