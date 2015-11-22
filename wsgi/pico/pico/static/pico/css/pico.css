@@ -2,6 +2,7 @@
   font-family: 'Ngrawit Web';
   src: url("../fonts/NgrawitWeb.ttf");
   font-weight: 300;
+  -moz-font-features-settings: "jvrp", "olcj", "wacj";
 }
 @font-face {
   font-family: 'RighmaSsiddhi';
@@ -10,6 +11,7 @@
 @font-face {
   font-family: 'Aturra Web';
   src: url("../fonts/Aturra Web.ttf");
+  -moz-font-features-settings: "jvrp", "olcj", "wacj";
 }
 /* line 4, ../sass/pico.scss */
 body {
@@ -111,7 +113,7 @@ body {
 }
 
 /* line 107, ../sass/pico.scss */
-article.javanese-text, .javanese-text, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders {
+article.javanese-text, .javanese-text {
   box-sizing: border-box;
   -ms-word-break: break-all;
   word-break: break-all;
@@ -125,8 +127,7 @@ article.javanese-text, .javanese-text, .cke_editable .cke_editable_themed .cke_c
 /* line 60, ../sass/components/_type.scss */
 article.javanese-text h1, article.javanese-text h2, article.javanese-text h3, article.javanese-text h4, article.javanese-text h5, article.javanese-text h6,
 article.javanese-text .h1, article.javanese-text .h2, article.javanese-text .h3, article.javanese-text .h4, article.javanese-text .h5, article.javanese-text .h6, .javanese-text h1, .javanese-text h2, .javanese-text h3, .javanese-text h4, .javanese-text h5, .javanese-text h6,
-.javanese-text .h1, .javanese-text .h2, .javanese-text .h3, .javanese-text .h4, .javanese-text .h5, .javanese-text .h6, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h1, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h2, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h3, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h4, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h5, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h6,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h1, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h2, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h3, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h4, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h5, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h6 {
+.javanese-text .h1, .javanese-text .h2, .javanese-text .h3, .javanese-text .h4, .javanese-text .h5, .javanese-text .h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, "Ngrawit Web", sans-serif;
   font-weight: 500;
   line-height: 1.5;
@@ -159,20 +160,7 @@ article.javanese-text .h6 .small, .javanese-text h1 small,
 .javanese-text .h3 .small, .javanese-text .h4 small,
 .javanese-text .h4 .small, .javanese-text .h5 small,
 .javanese-text .h5 .small, .javanese-text .h6 small,
-.javanese-text .h6 .small, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h1 small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h1 .small, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h2 small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h2 .small, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h3 small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h3 .small, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h4 small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h4 .small, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h5 small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h5 .small, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h6 small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h6 .small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h1 small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h1 .small, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h2 small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h2 .small, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h3 small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h3 .small, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h4 small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h4 .small, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h5 small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h5 .small, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h6 small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h6 .small {
+.javanese-text .h6 .small {
   font-weight: normal;
   line-height: 1;
   color: #777777;
@@ -182,9 +170,7 @@ article.javanese-text h1, article.javanese-text .h1,
 article.javanese-text h2, article.javanese-text .h2,
 article.javanese-text h3, article.javanese-text .h3, .javanese-text h1, .javanese-text .h1,
 .javanese-text h2, .javanese-text .h2,
-.javanese-text h3, .javanese-text .h3, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h1, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h1,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h2, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h2,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h3, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h3 {
+.javanese-text h3, .javanese-text .h3 {
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -205,15 +191,7 @@ article.javanese-text .h3 .small, .javanese-text h1 small,
 .javanese-text .h2 .small,
 .javanese-text h3 small,
 .javanese-text h3 .small, .javanese-text .h3 small,
-.javanese-text .h3 .small, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h1 small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h1 .small, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h1 small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h1 .small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h2 small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h2 .small, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h2 small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h2 .small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h3 small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h3 .small, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h3 small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h3 .small {
+.javanese-text .h3 .small {
   font-size: 65%;
 }
 /* line 87, ../sass/components/_type.scss */
@@ -221,9 +199,7 @@ article.javanese-text h4, article.javanese-text .h4,
 article.javanese-text h5, article.javanese-text .h5,
 article.javanese-text h6, article.javanese-text .h6, .javanese-text h4, .javanese-text .h4,
 .javanese-text h5, .javanese-text .h5,
-.javanese-text h6, .javanese-text .h6, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h4, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h4,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h5, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h5,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h6, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h6 {
+.javanese-text h6, .javanese-text .h6 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -244,50 +220,42 @@ article.javanese-text .h6 .small, .javanese-text h4 small,
 .javanese-text .h5 .small,
 .javanese-text h6 small,
 .javanese-text h6 .small, .javanese-text .h6 small,
-.javanese-text .h6 .small, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h4 small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h4 .small, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h4 small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h4 .small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h5 small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h5 .small, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h5 small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h5 .small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h6 small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h6 .small, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h6 small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h6 .small {
+.javanese-text .h6 .small {
   font-size: 75%;
 }
 /* line 99, ../sass/components/_type.scss */
-article.javanese-text h1, article.javanese-text .h1, .javanese-text h1, .javanese-text .h1, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h1, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h1 {
+article.javanese-text h1, article.javanese-text .h1, .javanese-text h1, .javanese-text .h1 {
   font-size: 41px;
 }
 /* line 100, ../sass/components/_type.scss */
-article.javanese-text h2, article.javanese-text .h2, .javanese-text h2, .javanese-text .h2, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h2, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h2 {
+article.javanese-text h2, article.javanese-text .h2, .javanese-text h2, .javanese-text .h2 {
   font-size: 34px;
 }
 /* line 101, ../sass/components/_type.scss */
-article.javanese-text h3, article.javanese-text .h3, .javanese-text h3, .javanese-text .h3, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h3, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h3 {
+article.javanese-text h3, article.javanese-text .h3, .javanese-text h3, .javanese-text .h3 {
   font-size: 28px;
 }
 /* line 102, ../sass/components/_type.scss */
-article.javanese-text h4, article.javanese-text .h4, .javanese-text h4, .javanese-text .h4, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h4, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h4 {
+article.javanese-text h4, article.javanese-text .h4, .javanese-text h4, .javanese-text .h4 {
   font-size: 20px;
 }
 /* line 103, ../sass/components/_type.scss */
-article.javanese-text h5, article.javanese-text .h5, .javanese-text h5, .javanese-text .h5, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h5, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h5 {
+article.javanese-text h5, article.javanese-text .h5, .javanese-text h5, .javanese-text .h5 {
   font-size: 16px;
 }
 /* line 104, ../sass/components/_type.scss */
-article.javanese-text h6, article.javanese-text .h6, .javanese-text h6, .javanese-text .h6, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders h6, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .h6 {
+article.javanese-text h6, article.javanese-text .h6, .javanese-text h6, .javanese-text .h6 {
   font-size: 14px;
 }
 /* line 110, ../sass/components/_type.scss */
-article.javanese-text p, .javanese-text p, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders p {
+article.javanese-text p, .javanese-text p {
   font-size: 1.31em;
   line-height: 2.3;
   margin: 0 0 20px;
   letter-spacing: 0.5px;
 }
 /* line 117, ../sass/components/_type.scss */
-article.javanese-text .lead, .javanese-text .lead, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .lead {
+article.javanese-text .lead, .javanese-text .lead {
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: 300;
@@ -295,177 +263,165 @@ article.javanese-text .lead, .javanese-text .lead, .cke_editable .cke_editable_t
 }
 @media (min-width: 768px) {
   /* line 117, ../sass/components/_type.scss */
-  article.javanese-text .lead, .javanese-text .lead, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .lead {
+  article.javanese-text .lead, .javanese-text .lead {
     font-size: 20px;
   }
 }
 /* line 133, ../sass/components/_type.scss */
 article.javanese-text small,
 article.javanese-text .small, .javanese-text small,
-.javanese-text .small, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .small {
+.javanese-text .small {
   font-size: 75%;
 }
 /* line 138, ../sass/components/_type.scss */
 article.javanese-text mark,
 article.javanese-text .mark, .javanese-text mark,
-.javanese-text .mark, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders mark,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .mark {
+.javanese-text .mark {
   background-color: #fcf8e3;
   padding: .2em;
 }
 /* line 145, ../sass/components/_type.scss */
-article.javanese-text .text-left, .javanese-text .text-left, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .text-left {
+article.javanese-text .text-left, .javanese-text .text-left {
   text-align: left;
 }
 /* line 146, ../sass/components/_type.scss */
-article.javanese-text .text-right, .javanese-text .text-right, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .text-right {
+article.javanese-text .text-right, .javanese-text .text-right {
   text-align: right;
 }
 /* line 147, ../sass/components/_type.scss */
-article.javanese-text .text-center, .javanese-text .text-center, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .text-center {
+article.javanese-text .text-center, .javanese-text .text-center {
   text-align: center;
 }
 /* line 148, ../sass/components/_type.scss */
-article.javanese-text .text-justify, .javanese-text .text-justify, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .text-justify {
+article.javanese-text .text-justify, .javanese-text .text-justify {
   text-align: justify;
 }
 /* line 149, ../sass/components/_type.scss */
-article.javanese-text .text-nowrap, .javanese-text .text-nowrap, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .text-nowrap {
+article.javanese-text .text-nowrap, .javanese-text .text-nowrap {
   white-space: nowrap;
 }
 /* line 152, ../sass/components/_type.scss */
-article.javanese-text .text-lowercase, .javanese-text .text-lowercase, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .text-lowercase {
+article.javanese-text .text-lowercase, .javanese-text .text-lowercase {
   text-transform: lowercase;
 }
 /* line 153, ../sass/components/_type.scss */
-article.javanese-text .text-uppercase, article.javanese-text .initialism, article.javanese-text .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .initialism, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders article.javanese-text .initialism, .javanese-text .text-uppercase, article.javanese-text .initialism, .javanese-text .initialism, .javanese-text .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .initialism, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .javanese-text .initialism, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .text-uppercase, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .initialism {
+article.javanese-text .text-uppercase, article.javanese-text .initialism, .javanese-text .text-uppercase, article.javanese-text .initialism, .javanese-text .initialism {
   text-transform: uppercase;
 }
 /* line 154, ../sass/components/_type.scss */
-article.javanese-text .text-capitalize, .javanese-text .text-capitalize, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .text-capitalize {
+article.javanese-text .text-capitalize, .javanese-text .text-capitalize {
   text-transform: capitalize;
 }
 /* line 157, ../sass/components/_type.scss */
-article.javanese-text .text-muted, .javanese-text .text-muted, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .text-muted {
+article.javanese-text .text-muted, .javanese-text .text-muted {
   color: #777777;
 }
 /* line 5, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
-article.javanese-text .text-primary, .javanese-text .text-primary, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .text-primary {
+article.javanese-text .text-primary, .javanese-text .text-primary {
   color: #337ab7;
 }
 /* line 8, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
 article.javanese-text a.text-primary:hover,
 article.javanese-text a.text-primary:focus, .javanese-text a.text-primary:hover,
-.javanese-text a.text-primary:focus, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders a.text-primary:hover,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders a.text-primary:focus {
+.javanese-text a.text-primary:focus {
   color: #286090;
 }
 /* line 5, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
-article.javanese-text .text-success, .javanese-text .text-success, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .text-success {
+article.javanese-text .text-success, .javanese-text .text-success {
   color: #3c763d;
 }
 /* line 8, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
 article.javanese-text a.text-success:hover,
 article.javanese-text a.text-success:focus, .javanese-text a.text-success:hover,
-.javanese-text a.text-success:focus, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders a.text-success:hover,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders a.text-success:focus {
+.javanese-text a.text-success:focus {
   color: #2b542c;
 }
 /* line 5, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
-article.javanese-text .text-info, .javanese-text .text-info, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .text-info {
+article.javanese-text .text-info, .javanese-text .text-info {
   color: #31708f;
 }
 /* line 8, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
 article.javanese-text a.text-info:hover,
 article.javanese-text a.text-info:focus, .javanese-text a.text-info:hover,
-.javanese-text a.text-info:focus, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders a.text-info:hover,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders a.text-info:focus {
+.javanese-text a.text-info:focus {
   color: #245269;
 }
 /* line 5, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
-article.javanese-text .text-warning, .javanese-text .text-warning, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .text-warning {
+article.javanese-text .text-warning, .javanese-text .text-warning {
   color: #8a6d3b;
 }
 /* line 8, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
 article.javanese-text a.text-warning:hover,
 article.javanese-text a.text-warning:focus, .javanese-text a.text-warning:hover,
-.javanese-text a.text-warning:focus, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders a.text-warning:hover,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders a.text-warning:focus {
+.javanese-text a.text-warning:focus {
   color: #66512c;
 }
 /* line 5, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
-article.javanese-text .text-danger, .javanese-text .text-danger, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .text-danger {
+article.javanese-text .text-danger, .javanese-text .text-danger {
   color: #a94442;
 }
 /* line 8, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
 article.javanese-text a.text-danger:hover,
 article.javanese-text a.text-danger:focus, .javanese-text a.text-danger:hover,
-.javanese-text a.text-danger:focus, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders a.text-danger:hover,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders a.text-danger:focus {
+.javanese-text a.text-danger:focus {
   color: #843534;
 }
 /* line 174, ../sass/components/_type.scss */
-article.javanese-text .bg-primary, .javanese-text .bg-primary, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .bg-primary {
+article.javanese-text .bg-primary, .javanese-text .bg-primary {
   color: #fff;
 }
 /* line 5, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
-article.javanese-text .bg-primary, .javanese-text .bg-primary, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .bg-primary {
+article.javanese-text .bg-primary, .javanese-text .bg-primary {
   background-color: #337ab7;
 }
 /* line 8, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
 article.javanese-text a.bg-primary:hover,
 article.javanese-text a.bg-primary:focus, .javanese-text a.bg-primary:hover,
-.javanese-text a.bg-primary:focus, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders a.bg-primary:hover,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders a.bg-primary:focus {
+.javanese-text a.bg-primary:focus {
   background-color: #286090;
 }
 /* line 5, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
-article.javanese-text .bg-success, .javanese-text .bg-success, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .bg-success {
+article.javanese-text .bg-success, .javanese-text .bg-success {
   background-color: #dff0d8;
 }
 /* line 8, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
 article.javanese-text a.bg-success:hover,
 article.javanese-text a.bg-success:focus, .javanese-text a.bg-success:hover,
-.javanese-text a.bg-success:focus, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders a.bg-success:hover,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders a.bg-success:focus {
+.javanese-text a.bg-success:focus {
   background-color: #c1e2b3;
 }
 /* line 5, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
-article.javanese-text .bg-info, .javanese-text .bg-info, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .bg-info {
+article.javanese-text .bg-info, .javanese-text .bg-info {
   background-color: #d9edf7;
 }
 /* line 8, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
 article.javanese-text a.bg-info:hover,
 article.javanese-text a.bg-info:focus, .javanese-text a.bg-info:hover,
-.javanese-text a.bg-info:focus, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders a.bg-info:hover,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders a.bg-info:focus {
+.javanese-text a.bg-info:focus {
   background-color: #afd9ee;
 }
 /* line 5, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
-article.javanese-text .bg-warning, .javanese-text .bg-warning, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .bg-warning {
+article.javanese-text .bg-warning, .javanese-text .bg-warning {
   background-color: #fcf8e3;
 }
 /* line 8, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
 article.javanese-text a.bg-warning:hover,
 article.javanese-text a.bg-warning:focus, .javanese-text a.bg-warning:hover,
-.javanese-text a.bg-warning:focus, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders a.bg-warning:hover,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders a.bg-warning:focus {
+.javanese-text a.bg-warning:focus {
   background-color: #f7ecb5;
 }
 /* line 5, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
-article.javanese-text .bg-danger, .javanese-text .bg-danger, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .bg-danger {
+article.javanese-text .bg-danger, .javanese-text .bg-danger {
   background-color: #f2dede;
 }
 /* line 8, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
 article.javanese-text a.bg-danger:hover,
 article.javanese-text a.bg-danger:focus, .javanese-text a.bg-danger:hover,
-.javanese-text a.bg-danger:focus, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders a.bg-danger:hover,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders a.bg-danger:focus {
+.javanese-text a.bg-danger:focus {
   background-color: #e4b9b9;
 }
 /* line 193, ../sass/components/_type.scss */
-article.javanese-text .page-header, .javanese-text .page-header, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .page-header {
+article.javanese-text .page-header, .javanese-text .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
   border-bottom: 1px solid #eeeeee;
@@ -473,8 +429,7 @@ article.javanese-text .page-header, .javanese-text .page-header, .cke_editable .
 /* line 204, ../sass/components/_type.scss */
 article.javanese-text ul,
 article.javanese-text ol, .javanese-text ul,
-.javanese-text ol, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders ul,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders ol {
+.javanese-text ol {
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -485,61 +440,57 @@ article.javanese-text ol ul,
 article.javanese-text ol ol, .javanese-text ul ul,
 .javanese-text ul ol,
 .javanese-text ol ul,
-.javanese-text ol ol, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders ul ul,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders ul ol,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders ol ul,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders ol ol {
+.javanese-text ol ol {
   margin-bottom: 0;
 }
 /* line 217, ../sass/components/_type.scss */
-article.javanese-text .list-unstyled, .javanese-text .list-unstyled, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .list-unstyled {
+article.javanese-text .list-unstyled, .javanese-text .list-unstyled {
   padding-left: 0;
   list-style: none;
 }
 /* line 223, ../sass/components/_type.scss */
-article.javanese-text .list-inline, .javanese-text .list-inline, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .list-inline {
+article.javanese-text .list-inline, .javanese-text .list-inline {
   padding-left: 0;
   list-style: none;
   margin-left: -5px;
 }
 /* line 227, ../sass/components/_type.scss */
-article.javanese-text .list-inline > li, .javanese-text .list-inline > li, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .list-inline > li {
+article.javanese-text .list-inline > li, .javanese-text .list-inline > li {
   display: inline-block;
   padding-left: 5px;
   padding-right: 5px;
 }
 /* line 235, ../sass/components/_type.scss */
-article.javanese-text dl, .javanese-text dl, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders dl {
+article.javanese-text dl, .javanese-text dl {
   margin-top: 0;
   margin-bottom: 20px;
 }
 /* line 239, ../sass/components/_type.scss */
 article.javanese-text dt,
 article.javanese-text dd, .javanese-text dt,
-.javanese-text dd, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders dt,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders dd {
+.javanese-text dd {
   line-height: 2.3;
 }
 /* line 243, ../sass/components/_type.scss */
-article.javanese-text dt, .javanese-text dt, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders dt {
+article.javanese-text dt, .javanese-text dt {
   font-weight: bold;
 }
 /* line 246, ../sass/components/_type.scss */
-article.javanese-text dd, .javanese-text dd, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders dd {
+article.javanese-text dd, .javanese-text dd {
   margin-left: 0;
 }
 /* line 14, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-article.javanese-text .dl-horizontal dd:before, article.javanese-text .dl-horizontal dd:after, .javanese-text .dl-horizontal dd:before, .javanese-text .dl-horizontal dd:after, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .dl-horizontal dd:before, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .dl-horizontal dd:after {
+article.javanese-text .dl-horizontal dd:before, article.javanese-text .dl-horizontal dd:after, .javanese-text .dl-horizontal dd:before, .javanese-text .dl-horizontal dd:after {
   content: " ";
   display: table;
 }
 /* line 19, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-article.javanese-text .dl-horizontal dd:after, .javanese-text .dl-horizontal dd:after, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .dl-horizontal dd:after {
+article.javanese-text .dl-horizontal dd:after, .javanese-text .dl-horizontal dd:after {
   clear: both;
 }
 @media (min-width: 768px) {
   /* line 261, ../sass/components/_type.scss */
-  article.javanese-text .dl-horizontal dt, .javanese-text .dl-horizontal dt, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .dl-horizontal dt {
+  article.javanese-text .dl-horizontal dt, .javanese-text .dl-horizontal dt {
     float: left;
     width: 160px;
     clear: left;
@@ -549,24 +500,23 @@ article.javanese-text .dl-horizontal dd:after, .javanese-text .dl-horizontal dd:
     white-space: nowrap;
   }
   /* line 268, ../sass/components/_type.scss */
-  article.javanese-text .dl-horizontal dd, .javanese-text .dl-horizontal dd, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .dl-horizontal dd {
+  article.javanese-text .dl-horizontal dd, .javanese-text .dl-horizontal dd {
     margin-left: 180px;
   }
 }
 /* line 279, ../sass/components/_type.scss */
 article.javanese-text abbr[title],
 article.javanese-text abbr[data-original-title], .javanese-text abbr[title],
-.javanese-text abbr[data-original-title], .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders abbr[title],
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders abbr[data-original-title] {
+.javanese-text abbr[data-original-title] {
   cursor: help;
   border-bottom: 1px dotted #777777;
 }
 /* line 286, ../sass/components/_type.scss */
-article.javanese-text .initialism, .javanese-text .initialism, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .initialism {
+article.javanese-text .initialism, .javanese-text .initialism {
   font-size: 90%;
 }
 /* line 292, ../sass/components/_type.scss */
-article.javanese-text blockquote, .javanese-text blockquote, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders blockquote {
+article.javanese-text blockquote, .javanese-text blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
   font-size: 17.5px;
@@ -577,9 +527,7 @@ article.javanese-text blockquote p:last-child,
 article.javanese-text blockquote ul:last-child,
 article.javanese-text blockquote ol:last-child, .javanese-text blockquote p:last-child,
 .javanese-text blockquote ul:last-child,
-.javanese-text blockquote ol:last-child, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders blockquote p:last-child,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders blockquote ul:last-child,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders blockquote ol:last-child {
+.javanese-text blockquote ol:last-child {
   margin-bottom: 0;
 }
 /* line 308, ../sass/components/_type.scss */
@@ -587,9 +535,7 @@ article.javanese-text blockquote footer,
 article.javanese-text blockquote small,
 article.javanese-text blockquote .small, .javanese-text blockquote footer,
 .javanese-text blockquote small,
-.javanese-text blockquote .small, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders blockquote footer,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders blockquote small,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders blockquote .small {
+.javanese-text blockquote .small {
   display: block;
   font-size: 80%;
   line-height: 2.3;
@@ -600,16 +546,13 @@ article.javanese-text blockquote footer:before,
 article.javanese-text blockquote small:before,
 article.javanese-text blockquote .small:before, .javanese-text blockquote footer:before,
 .javanese-text blockquote small:before,
-.javanese-text blockquote .small:before, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders blockquote footer:before,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders blockquote small:before,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders blockquote .small:before {
+.javanese-text blockquote .small:before {
   content: '\2014 \00A0';
 }
 /* line 325, ../sass/components/_type.scss */
 article.javanese-text .blockquote-reverse,
 article.javanese-text blockquote.pull-right, .javanese-text .blockquote-reverse,
-.javanese-text blockquote.pull-right, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .blockquote-reverse,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders blockquote.pull-right {
+.javanese-text blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
   border-right: 5px solid #eeeeee;
@@ -627,12 +570,7 @@ article.javanese-text blockquote.pull-right .small:before, .javanese-text .block
 .javanese-text .blockquote-reverse .small:before,
 .javanese-text blockquote.pull-right footer:before,
 .javanese-text blockquote.pull-right small:before,
-.javanese-text blockquote.pull-right .small:before, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .blockquote-reverse footer:before,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .blockquote-reverse small:before,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .blockquote-reverse .small:before,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders blockquote.pull-right footer:before,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders blockquote.pull-right small:before,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders blockquote.pull-right .small:before {
+.javanese-text blockquote.pull-right .small:before {
   content: '';
 }
 /* line 338, ../sass/components/_type.scss */
@@ -646,16 +584,11 @@ article.javanese-text blockquote.pull-right .small:after, .javanese-text .blockq
 .javanese-text .blockquote-reverse .small:after,
 .javanese-text blockquote.pull-right footer:after,
 .javanese-text blockquote.pull-right small:after,
-.javanese-text blockquote.pull-right .small:after, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .blockquote-reverse footer:after,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .blockquote-reverse small:after,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .blockquote-reverse .small:after,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders blockquote.pull-right footer:after,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders blockquote.pull-right small:after,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders blockquote.pull-right .small:after {
+.javanese-text blockquote.pull-right .small:after {
   content: '\00A0 \2014';
 }
 /* line 345, ../sass/components/_type.scss */
-article.javanese-text address, .javanese-text address, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders address {
+article.javanese-text address, .javanese-text address {
   margin-bottom: 20px;
   font-style: normal;
   line-height: 2.3;
@@ -663,8 +596,7 @@ article.javanese-text address, .javanese-text address, .cke_editable .cke_editab
 /* line 123, ../sass/pico.scss */
 article.javanese-text .meta small .author,
 article.javanese-text .meta .small .author, .javanese-text .meta small .author,
-.javanese-text .meta .small .author, .cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .meta small .author,
-.cke_editable .cke_editable_themed .cke_contents_ltr .cke_show_borders .meta .small .author {
+.javanese-text .meta .small .author {
   font-size: 15px;
 }
 
@@ -677,4 +609,405 @@ article.javanese-text .meta .small .author, .javanese-text .meta small .author,
 /* line 135, ../sass/pico.scss */
 .footer-content {
   padding-left: 30px;
+}
+
+/* line 60, ../sass/components/_type.scss */
+.pppppppp h1, .pppppppp h2, .pppppppp h3, .pppppppp h4, .pppppppp h5, .pppppppp h6,
+.pppppppp .h1, .pppppppp .h2, .pppppppp .h3, .pppppppp .h4, .pppppppp .h5, .pppppppp .h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Ngrawit Web", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  color: inherit;
+}
+/* line 67, ../sass/components/_type.scss */
+.pppppppp h1 small,
+.pppppppp h1 .small, .pppppppp h2 small,
+.pppppppp h2 .small, .pppppppp h3 small,
+.pppppppp h3 .small, .pppppppp h4 small,
+.pppppppp h4 .small, .pppppppp h5 small,
+.pppppppp h5 .small, .pppppppp h6 small,
+.pppppppp h6 .small,
+.pppppppp .h1 small,
+.pppppppp .h1 .small, .pppppppp .h2 small,
+.pppppppp .h2 .small, .pppppppp .h3 small,
+.pppppppp .h3 .small, .pppppppp .h4 small,
+.pppppppp .h4 .small, .pppppppp .h5 small,
+.pppppppp .h5 .small, .pppppppp .h6 small,
+.pppppppp .h6 .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #777777;
+}
+/* line 75, ../sass/components/_type.scss */
+.pppppppp h1, .pppppppp .h1,
+.pppppppp h2, .pppppppp .h2,
+.pppppppp h3, .pppppppp .h3 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+/* line 81, ../sass/components/_type.scss */
+.pppppppp h1 small,
+.pppppppp h1 .small, .pppppppp .h1 small,
+.pppppppp .h1 .small,
+.pppppppp h2 small,
+.pppppppp h2 .small, .pppppppp .h2 small,
+.pppppppp .h2 .small,
+.pppppppp h3 small,
+.pppppppp h3 .small, .pppppppp .h3 small,
+.pppppppp .h3 .small {
+  font-size: 65%;
+}
+/* line 87, ../sass/components/_type.scss */
+.pppppppp h4, .pppppppp .h4,
+.pppppppp h5, .pppppppp .h5,
+.pppppppp h6, .pppppppp .h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 93, ../sass/components/_type.scss */
+.pppppppp h4 small,
+.pppppppp h4 .small, .pppppppp .h4 small,
+.pppppppp .h4 .small,
+.pppppppp h5 small,
+.pppppppp h5 .small, .pppppppp .h5 small,
+.pppppppp .h5 .small,
+.pppppppp h6 small,
+.pppppppp h6 .small, .pppppppp .h6 small,
+.pppppppp .h6 .small {
+  font-size: 75%;
+}
+/* line 99, ../sass/components/_type.scss */
+.pppppppp h1, .pppppppp .h1 {
+  font-size: 41px;
+}
+/* line 100, ../sass/components/_type.scss */
+.pppppppp h2, .pppppppp .h2 {
+  font-size: 34px;
+}
+/* line 101, ../sass/components/_type.scss */
+.pppppppp h3, .pppppppp .h3 {
+  font-size: 28px;
+}
+/* line 102, ../sass/components/_type.scss */
+.pppppppp h4, .pppppppp .h4 {
+  font-size: 20px;
+}
+/* line 103, ../sass/components/_type.scss */
+.pppppppp h5, .pppppppp .h5 {
+  font-size: 16px;
+}
+/* line 104, ../sass/components/_type.scss */
+.pppppppp h6, .pppppppp .h6 {
+  font-size: 14px;
+}
+/* line 110, ../sass/components/_type.scss */
+.pppppppp p {
+  font-size: 1.31em;
+  line-height: 2.3;
+  margin: 0 0 20px;
+  letter-spacing: 0.5px;
+}
+/* line 117, ../sass/components/_type.scss */
+.pppppppp .lead {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 2.3;
+}
+@media (min-width: 768px) {
+  /* line 117, ../sass/components/_type.scss */
+  .pppppppp .lead {
+    font-size: 20px;
+  }
+}
+/* line 133, ../sass/components/_type.scss */
+.pppppppp small,
+.pppppppp .small {
+  font-size: 75%;
+}
+/* line 138, ../sass/components/_type.scss */
+.pppppppp mark,
+.pppppppp .mark {
+  background-color: #fcf8e3;
+  padding: .2em;
+}
+/* line 145, ../sass/components/_type.scss */
+.pppppppp .text-left {
+  text-align: left;
+}
+/* line 146, ../sass/components/_type.scss */
+.pppppppp .text-right {
+  text-align: right;
+}
+/* line 147, ../sass/components/_type.scss */
+.pppppppp .text-center {
+  text-align: center;
+}
+/* line 148, ../sass/components/_type.scss */
+.pppppppp .text-justify {
+  text-align: justify;
+}
+/* line 149, ../sass/components/_type.scss */
+.pppppppp .text-nowrap {
+  white-space: nowrap;
+}
+/* line 152, ../sass/components/_type.scss */
+.pppppppp .text-lowercase {
+  text-transform: lowercase;
+}
+/* line 153, ../sass/components/_type.scss */
+.pppppppp .text-uppercase, .pppppppp .initialism {
+  text-transform: uppercase;
+}
+/* line 154, ../sass/components/_type.scss */
+.pppppppp .text-capitalize {
+  text-transform: capitalize;
+}
+/* line 157, ../sass/components/_type.scss */
+.pppppppp .text-muted {
+  color: #777777;
+}
+/* line 5, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
+.pppppppp .text-primary {
+  color: #337ab7;
+}
+/* line 8, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
+.pppppppp a.text-primary:hover,
+.pppppppp a.text-primary:focus {
+  color: #286090;
+}
+/* line 5, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
+.pppppppp .text-success {
+  color: #3c763d;
+}
+/* line 8, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
+.pppppppp a.text-success:hover,
+.pppppppp a.text-success:focus {
+  color: #2b542c;
+}
+/* line 5, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
+.pppppppp .text-info {
+  color: #31708f;
+}
+/* line 8, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
+.pppppppp a.text-info:hover,
+.pppppppp a.text-info:focus {
+  color: #245269;
+}
+/* line 5, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
+.pppppppp .text-warning {
+  color: #8a6d3b;
+}
+/* line 8, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
+.pppppppp a.text-warning:hover,
+.pppppppp a.text-warning:focus {
+  color: #66512c;
+}
+/* line 5, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
+.pppppppp .text-danger {
+  color: #a94442;
+}
+/* line 8, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
+.pppppppp a.text-danger:hover,
+.pppppppp a.text-danger:focus {
+  color: #843534;
+}
+/* line 174, ../sass/components/_type.scss */
+.pppppppp .bg-primary {
+  color: #fff;
+}
+/* line 5, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
+.pppppppp .bg-primary {
+  background-color: #337ab7;
+}
+/* line 8, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
+.pppppppp a.bg-primary:hover,
+.pppppppp a.bg-primary:focus {
+  background-color: #286090;
+}
+/* line 5, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
+.pppppppp .bg-success {
+  background-color: #dff0d8;
+}
+/* line 8, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
+.pppppppp a.bg-success:hover,
+.pppppppp a.bg-success:focus {
+  background-color: #c1e2b3;
+}
+/* line 5, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
+.pppppppp .bg-info {
+  background-color: #d9edf7;
+}
+/* line 8, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
+.pppppppp a.bg-info:hover,
+.pppppppp a.bg-info:focus {
+  background-color: #afd9ee;
+}
+/* line 5, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
+.pppppppp .bg-warning {
+  background-color: #fcf8e3;
+}
+/* line 8, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
+.pppppppp a.bg-warning:hover,
+.pppppppp a.bg-warning:focus {
+  background-color: #f7ecb5;
+}
+/* line 5, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
+.pppppppp .bg-danger {
+  background-color: #f2dede;
+}
+/* line 8, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
+.pppppppp a.bg-danger:hover,
+.pppppppp a.bg-danger:focus {
+  background-color: #e4b9b9;
+}
+/* line 193, ../sass/components/_type.scss */
+.pppppppp .page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+/* line 204, ../sass/components/_type.scss */
+.pppppppp ul,
+.pppppppp ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+/* line 208, ../sass/components/_type.scss */
+.pppppppp ul ul,
+.pppppppp ul ol,
+.pppppppp ol ul,
+.pppppppp ol ol {
+  margin-bottom: 0;
+}
+/* line 217, ../sass/components/_type.scss */
+.pppppppp .list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+/* line 223, ../sass/components/_type.scss */
+.pppppppp .list-inline {
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+}
+/* line 227, ../sass/components/_type.scss */
+.pppppppp .list-inline > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* line 235, ../sass/components/_type.scss */
+.pppppppp dl {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+/* line 239, ../sass/components/_type.scss */
+.pppppppp dt,
+.pppppppp dd {
+  line-height: 2.3;
+}
+/* line 243, ../sass/components/_type.scss */
+.pppppppp dt {
+  font-weight: bold;
+}
+/* line 246, ../sass/components/_type.scss */
+.pppppppp dd {
+  margin-left: 0;
+}
+/* line 14, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+.pppppppp .dl-horizontal dd:before, .pppppppp .dl-horizontal dd:after {
+  content: " ";
+  display: table;
+}
+/* line 19, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+.pppppppp .dl-horizontal dd:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  /* line 261, ../sass/components/_type.scss */
+  .pppppppp .dl-horizontal dt {
+    float: left;
+    width: 160px;
+    clear: left;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  /* line 268, ../sass/components/_type.scss */
+  .pppppppp .dl-horizontal dd {
+    margin-left: 180px;
+  }
+}
+/* line 279, ../sass/components/_type.scss */
+.pppppppp abbr[title],
+.pppppppp abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted #777777;
+}
+/* line 286, ../sass/components/_type.scss */
+.pppppppp .initialism {
+  font-size: 90%;
+}
+/* line 292, ../sass/components/_type.scss */
+.pppppppp blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  border-left: 5px solid #eeeeee;
+}
+/* line 301, ../sass/components/_type.scss */
+.pppppppp blockquote p:last-child,
+.pppppppp blockquote ul:last-child,
+.pppppppp blockquote ol:last-child {
+  margin-bottom: 0;
+}
+/* line 308, ../sass/components/_type.scss */
+.pppppppp blockquote footer,
+.pppppppp blockquote small,
+.pppppppp blockquote .small {
+  display: block;
+  font-size: 80%;
+  line-height: 2.3;
+  color: #777777;
+}
+/* line 316, ../sass/components/_type.scss */
+.pppppppp blockquote footer:before,
+.pppppppp blockquote small:before,
+.pppppppp blockquote .small:before {
+  content: '\2014 \00A0';
+}
+/* line 325, ../sass/components/_type.scss */
+.pppppppp .blockquote-reverse,
+.pppppppp blockquote.pull-right {
+  padding-right: 15px;
+  padding-left: 0;
+  border-right: 5px solid #eeeeee;
+  border-left: 0;
+  text-align: right;
+}
+/* line 337, ../sass/components/_type.scss */
+.pppppppp .blockquote-reverse footer:before,
+.pppppppp .blockquote-reverse small:before,
+.pppppppp .blockquote-reverse .small:before,
+.pppppppp blockquote.pull-right footer:before,
+.pppppppp blockquote.pull-right small:before,
+.pppppppp blockquote.pull-right .small:before {
+  content: '';
+}
+/* line 338, ../sass/components/_type.scss */
+.pppppppp .blockquote-reverse footer:after,
+.pppppppp .blockquote-reverse small:after,
+.pppppppp .blockquote-reverse .small:after,
+.pppppppp blockquote.pull-right footer:after,
+.pppppppp blockquote.pull-right small:after,
+.pppppppp blockquote.pull-right .small:after {
+  content: '\00A0 \2014';
+}
+/* line 345, ../sass/components/_type.scss */
+.pppppppp address {
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: 2.3;
 }
