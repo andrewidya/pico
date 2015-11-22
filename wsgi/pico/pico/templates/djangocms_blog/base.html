@@ -1,5 +1,5 @@
 {% extends CMS_TEMPLATE %}
-
+{% load cms_tags %}
 {% block meta %}
     {%  if meta %}
         {% include "meta_mixin/meta.html" %}
@@ -7,7 +7,7 @@
 {% endblock meta %}
 
 {% block content %}
-<div class="app app-blog span8">
+<div class="app app-blog">
     {% block content_blog %}{% endblock %}
 </div>
 {% endblock content %}

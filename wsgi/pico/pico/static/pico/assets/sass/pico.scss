@@ -1,0 +1,95 @@
+@import "bootstrap";
+
+//body {
+//	background: url('../img/background.png') repeat;
+//}
+
+.container-full, .main-content {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.blog {
+	max-width: 940px;
+	margin: 0 auto;
+}
+
+.app {
+	background: darken(#f8f8f8, 6.5%);
+	.row {
+		margin: 0;
+	}
+}
+
+.cms_plugin {
+	.row {
+		margin: 0;
+	}
+}
+
+.post-meta {
+	font-size: 0.8em;
+}
+
+.blog-list, .post-detail, .sidebar{
+	padding: 2em;
+}
+
+.post-content-wrapper {
+	border: 1px solid darken(#f8f8f8, 6.5%);
+	background: #fff;
+}
+
+.post-item {
+	font-size: 1.2em;
+	line-height: 2.5em;
+	box-sizing: border-box;
+		-ms-word-break: break-all;
+	    word-break: break-all;
+
+	 /* Non standard for webkit */
+	     word-break: break-all;
+
+	    -webkit-hyphens: auto;
+	       -moz-hyphens: auto;
+	        -ms-hyphens: auto;
+	            hyphens: auto;
+	p {
+		margin: 0 0 2em 0;
+	}
+
+	.post-title {
+		font-size: 2.5em;
+		margin-top: -0.01em;
+		a {
+			color: #80AAFF;
+			&:hover {
+				color: darken(#80AAFF, 15%);
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.blog-latest-entries {
+	.blog-lead {
+		box-sizing: border-box;
+			-ms-word-break: break-all;
+		    word-break: break-all;
+
+		 	/* Non standard for webkit */
+		     word-break: break-all;
+
+		    -webkit-hyphens: auto;
+		       -moz-hyphens: auto;
+		        -ms-hyphens: auto;
+		            hyphens: auto;
+		p {
+			margin: 0 0 2em 0;
+		}
+	}
+}
+
+.footer {
+	text-align: center;
+}

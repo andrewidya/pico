@@ -1,0 +1,21 @@
+{% regroup post_list by date_created.year as years  %}
+<ul>
+	{% for year in years %}
+	<li><a href="{% url 'pico_blog:archive-post-list' year.grouper %}">{{ year.grouper }}</a>
+	{% regroup year.list by date_created|date:"F" as months %}
+	<ul>
+		{% for month in months %}
+		{% with date_month=month.list.0.date_created.month %}
+		<li><a href="{% url 'pico_blog:archive-post-list' year.grouper date_month %}">{{ month.grouper }} ( {{ month.list | length }} )</a>
+		<ul>
+			{% for post in month.list %}
+			<li>{{ post.title }}</li>
+			{% endfor %}
+		</ul>
+		</li>
+		{% endwith %}
+		{% endfor %}
+	</ul>
+	</li>
+	{% endfor %}
+</ul>

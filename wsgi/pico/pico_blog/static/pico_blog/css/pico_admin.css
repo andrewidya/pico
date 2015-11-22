@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Ngrawit Web';
+  src: url("../fonts/NgrawitWeb.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'RighmaSsiddhi';
+  src: url("../fonts/RighmaSsiddhi.ttf");
+}
+@font-face {
+  font-family: 'Aturra Web';
+  src: url("../fonts/Aturra Web.ttf");
+}
+
+.cke_wysiwyg_frame {
+	font-family: "Helvetica Neue", Helvetica, Arial, "Ngrawit Web", sans-serif;
+	box-sizing: border-box;
+		-ms-word-break: break-all;
+	    word-break: break-all;
+
+	 /* Non standard for webkit */
+	     word-break: break-all;
+
+	    -webkit-hyphens: auto;
+	       -moz-hyphens: auto;
+	        -ms-hyphens: auto;
+	            hyphens: auto;
+}

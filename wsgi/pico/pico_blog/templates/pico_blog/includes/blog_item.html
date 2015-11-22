@@ -1,0 +1,27 @@
+{% load cms_tags %}
+
+<div class="content col-lg-4 col-md-4 col-sm-12">
+    <article {% if post.is_javanese %} class="javanese-text" {% endif %}>
+        <header>
+            <div class="post-meta" style="font-size: 12px">
+                <ul class="list-inline">
+                    <li><span><i class="fa fa-user"></i><span> <a href="{% url 'pico_blog:author-post-list' post.author.get_username %}" {% if post.is_javanese %} style="font-size: 14px" {% endif %}
+                        >{% if post.author.get_full_name %} {{ post.author.get_full_name }} {% else %} {{ post.author }} {% endif %}</a></li>
+                    <li><span><i class="fa fa-calendar"></i> <span>{{ post.date_created|date:"d b" }}</li>
+                    <li><span><i class="fa fa-folder-open-o"></i>
+                        {% if post.categories.exists %}
+                            {% for category in post.categories.all %}
+                            <span><a href="{{ category.get_absolute_url }}" {% if post.is_javanese %} style="font-size: 14px" {% endif %}>{{ category.name }}</a></span>
+                            {% endfor %}
+                        {% endif %}
+                    </li>
+                </ul>
+            </div>
+            <h3><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
+        </header>
+        <div class="post-entry">
+            <p>{{ post.post_content|truncatechars:100|safe }}</p>
+        </div>
+        <span><a href="{{ post.get_absolute_url }}">ꦧꦸꦏꦭꦚ꧀ꦗꦸꦠ꧀</a></span>
+    </article>
+</div>

@@ -143,7 +143,7 @@ INSTALLED_APPS = (
     'djangocms_teaser',
     'djangocms_video',
     # added blog support
-    'djangocms_blog',
+    #'djangocms_blog',
     'cmsplugin_filer_image',
     'parler',
     'taggit',
@@ -157,8 +157,8 @@ INSTALLED_APPS = (
     'south',
     #'reversion',
     'pico',
-    'pico_column',
-    'pico_carousel',
+    'pico_user_profile',
+    'pico_blog',
 )
 
 LANGUAGES = (

@@ -1,5 +1,48 @@
 {% extends "djangocms_blog/base.html" %}
-{% load i18n thumbnail cms_tags %}
+{% load i18n thumbnail cms_tags menu_tags %}
+
+{% block navigation %}
+{% if post.main_image_id %}
+    <div class="feature-image" style="height: 100vh; background: url('{{ post.get_image_full_url }}'); background-size: cover; max-width: 100%;">
+        <div class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    {% show_menu 0 1 100 100 "menu.html" %}
+                </ul>
+            </div>
+        </div>
+    </div>
+{% else %}
+    <div class="feature-image">
+        <div class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    {% show_menu 0 1 100 100 "menu.html" %}
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endif %}
+{% endblock navigation %}
+
 
 {% block meta_description %}{{ post.meta_description }}{% endblock meta_description %}
 {% block meta_keywords %}{{ post.meta_keywords }}{% endblock meta_keywords %}
@@ -7,23 +50,30 @@
 {% block title %}{{ post.get_title }}{% endblock %}
 
 {% block content_blog %}{% spaceless %}
-<article id="post-{{ post.slug }}" class="post-item post-detail">
-    <header>
-        <h2>{% render_model post "title" %}</h2>
-        {% block blog_meta %}
-            {% include "djangocms_blog/includes/blog_meta.html" %}
-        {% endblock %}
-    </header>
-    {% if post.main_image_id %}
-    <div class="blog-visual">
-        {% thumbnail post.main_image post.full_image_options.size crop=post.full_image_options.crop upscale=post.full_image_options.upscale subject_location=post.main_image.subject_location  as thumb %}
-        <img src="{{ thumb.url }}" alt="{{ post.main_image.default_alt_text }}" width="{{ thumb.width }}" height="{{ thumb.height }}" />
+<div class="row">
+    <div class="post-content-wrapper col-lg-8 col-md-8 col-sm-12">
+        <article id="post-{{ post.slug }}" class="post-item post-detail">
+            <header {% if post.main_image_id %} style="background: url({{ thumb.url }});" {% endif %}>
+                {% block blog_meta %}
+                    {% include "djangocms_blog/includes/blog_meta.html" %}
+                {% endblock %}
+                <h3 class="post-title">{% render_model post "title" %}</h3>
+            </header>
+            {% endspaceless %}
+            <div class="blog-content">
+                {% if use_placeholder %}
+                    {% render_placeholder post.content %}
+                {% endif %}
+                    {% render_model post "abstract" %}
+            </div>
+        </article>
     </div>
-    {% endif %}
-    {% endspaceless %}
-    {% if use_placeholder %}
-        <div class="blog-content">{% render_placeholder post.content %}</div>
-    {% endif %}
-        <div class="blog-content">{% render_model post "abstract" %}</div>
-</article>
+    <div class="sidebar col-lg-4 col-md-4 col-sm-12">
+        {% block sidebar_blog %}
+            {% placeholder "sidebar" %}
+        {% endblock %}
+    </div>
+</div>
 {% endblock content_blog %}
+
+
