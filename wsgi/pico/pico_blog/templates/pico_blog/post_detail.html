@@ -1,5 +1,5 @@
 {% extends "pico_blog/base.html" %}
-{% load cms_tags %}
+{% load cms_tags disqus_tags %}
 {% block header %}{% endblock header %}
 
 
@@ -27,6 +27,9 @@
             </header>
             <div class="post-entry">
                 {% render_model post "post_content" %}
+            </div>
+            <div class="comment">
+                {% disqus_show_comments %}
             </div>
         </article>
     </div>

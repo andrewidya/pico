@@ -125,6 +125,10 @@ article.javanese-text, .javanese-text {
   hyphens: auto;
 }
 /* line 60, ../sass/components/_type.scss */
+article.javanese-text *, .javanese-text * {
+  -moz-font-feature-settings: "wacj", "olcj", "jvrp";
+}
+/* line 64, ../sass/components/_type.scss */
 article.javanese-text h1, article.javanese-text h2, article.javanese-text h3, article.javanese-text h4, article.javanese-text h5, article.javanese-text h6,
 article.javanese-text .h1, article.javanese-text .h2, article.javanese-text .h3, article.javanese-text .h4, article.javanese-text .h5, article.javanese-text .h6, .javanese-text h1, .javanese-text h2, .javanese-text h3, .javanese-text h4, .javanese-text h5, .javanese-text h6,
 .javanese-text .h1, .javanese-text .h2, .javanese-text .h3, .javanese-text .h4, .javanese-text .h5, .javanese-text .h6 {
@@ -133,7 +137,7 @@ article.javanese-text .h1, article.javanese-text .h2, article.javanese-text .h3,
   line-height: 1.5;
   color: inherit;
 }
-/* line 67, ../sass/components/_type.scss */
+/* line 71, ../sass/components/_type.scss */
 article.javanese-text h1 small,
 article.javanese-text h1 .small, article.javanese-text h2 small,
 article.javanese-text h2 .small, article.javanese-text h3 small,
@@ -165,7 +169,7 @@ article.javanese-text .h6 .small, .javanese-text h1 small,
   line-height: 1;
   color: #777777;
 }
-/* line 75, ../sass/components/_type.scss */
+/* line 79, ../sass/components/_type.scss */
 article.javanese-text h1, article.javanese-text .h1,
 article.javanese-text h2, article.javanese-text .h2,
 article.javanese-text h3, article.javanese-text .h3, .javanese-text h1, .javanese-text .h1,
@@ -174,7 +178,7 @@ article.javanese-text h3, article.javanese-text .h3, .javanese-text h1, .javanes
   margin-top: 10px;
   margin-bottom: 20px;
 }
-/* line 81, ../sass/components/_type.scss */
+/* line 85, ../sass/components/_type.scss */
 article.javanese-text h1 small,
 article.javanese-text h1 .small, article.javanese-text .h1 small,
 article.javanese-text .h1 .small,
@@ -194,7 +198,7 @@ article.javanese-text .h3 .small, .javanese-text h1 small,
 .javanese-text .h3 .small {
   font-size: 65%;
 }
-/* line 87, ../sass/components/_type.scss */
+/* line 91, ../sass/components/_type.scss */
 article.javanese-text h4, article.javanese-text .h4,
 article.javanese-text h5, article.javanese-text .h5,
 article.javanese-text h6, article.javanese-text .h6, .javanese-text h4, .javanese-text .h4,
@@ -203,7 +207,7 @@ article.javanese-text h6, article.javanese-text .h6, .javanese-text h4, .javanes
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 93, ../sass/components/_type.scss */
+/* line 97, ../sass/components/_type.scss */
 article.javanese-text h4 small,
 article.javanese-text h4 .small, article.javanese-text .h4 small,
 article.javanese-text .h4 .small,
@@ -223,38 +227,38 @@ article.javanese-text .h6 .small, .javanese-text h4 small,
 .javanese-text .h6 .small {
   font-size: 75%;
 }
-/* line 99, ../sass/components/_type.scss */
+/* line 103, ../sass/components/_type.scss */
 article.javanese-text h1, article.javanese-text .h1, .javanese-text h1, .javanese-text .h1 {
   font-size: 41px;
 }
-/* line 100, ../sass/components/_type.scss */
+/* line 104, ../sass/components/_type.scss */
 article.javanese-text h2, article.javanese-text .h2, .javanese-text h2, .javanese-text .h2 {
   font-size: 34px;
 }
-/* line 101, ../sass/components/_type.scss */
+/* line 105, ../sass/components/_type.scss */
 article.javanese-text h3, article.javanese-text .h3, .javanese-text h3, .javanese-text .h3 {
   font-size: 28px;
 }
-/* line 102, ../sass/components/_type.scss */
+/* line 106, ../sass/components/_type.scss */
 article.javanese-text h4, article.javanese-text .h4, .javanese-text h4, .javanese-text .h4 {
   font-size: 20px;
 }
-/* line 103, ../sass/components/_type.scss */
+/* line 107, ../sass/components/_type.scss */
 article.javanese-text h5, article.javanese-text .h5, .javanese-text h5, .javanese-text .h5 {
   font-size: 16px;
 }
-/* line 104, ../sass/components/_type.scss */
+/* line 108, ../sass/components/_type.scss */
 article.javanese-text h6, article.javanese-text .h6, .javanese-text h6, .javanese-text .h6 {
   font-size: 14px;
 }
-/* line 110, ../sass/components/_type.scss */
+/* line 114, ../sass/components/_type.scss */
 article.javanese-text p, .javanese-text p {
   font-size: 1.31em;
   line-height: 2.3;
   margin: 0 0 20px;
   letter-spacing: 0.5px;
 }
-/* line 117, ../sass/components/_type.scss */
+/* line 121, ../sass/components/_type.scss */
 article.javanese-text .lead, .javanese-text .lead {
   margin-bottom: 20px;
   font-size: 18px;
@@ -262,57 +266,57 @@ article.javanese-text .lead, .javanese-text .lead {
   line-height: 2.3;
 }
 @media (min-width: 768px) {
-  /* line 117, ../sass/components/_type.scss */
+  /* line 121, ../sass/components/_type.scss */
   article.javanese-text .lead, .javanese-text .lead {
     font-size: 20px;
   }
 }
-/* line 133, ../sass/components/_type.scss */
+/* line 137, ../sass/components/_type.scss */
 article.javanese-text small,
 article.javanese-text .small, .javanese-text small,
 .javanese-text .small {
   font-size: 75%;
 }
-/* line 138, ../sass/components/_type.scss */
+/* line 142, ../sass/components/_type.scss */
 article.javanese-text mark,
 article.javanese-text .mark, .javanese-text mark,
 .javanese-text .mark {
   background-color: #fcf8e3;
   padding: .2em;
 }
-/* line 145, ../sass/components/_type.scss */
+/* line 149, ../sass/components/_type.scss */
 article.javanese-text .text-left, .javanese-text .text-left {
   text-align: left;
 }
-/* line 146, ../sass/components/_type.scss */
+/* line 150, ../sass/components/_type.scss */
 article.javanese-text .text-right, .javanese-text .text-right {
   text-align: right;
 }
-/* line 147, ../sass/components/_type.scss */
+/* line 151, ../sass/components/_type.scss */
 article.javanese-text .text-center, .javanese-text .text-center {
   text-align: center;
 }
-/* line 148, ../sass/components/_type.scss */
+/* line 152, ../sass/components/_type.scss */
 article.javanese-text .text-justify, .javanese-text .text-justify {
   text-align: justify;
 }
-/* line 149, ../sass/components/_type.scss */
+/* line 153, ../sass/components/_type.scss */
 article.javanese-text .text-nowrap, .javanese-text .text-nowrap {
   white-space: nowrap;
 }
-/* line 152, ../sass/components/_type.scss */
+/* line 156, ../sass/components/_type.scss */
 article.javanese-text .text-lowercase, .javanese-text .text-lowercase {
   text-transform: lowercase;
 }
-/* line 153, ../sass/components/_type.scss */
+/* line 157, ../sass/components/_type.scss */
 article.javanese-text .text-uppercase, article.javanese-text .initialism, .javanese-text .text-uppercase, article.javanese-text .initialism, .javanese-text .initialism {
   text-transform: uppercase;
 }
-/* line 154, ../sass/components/_type.scss */
+/* line 158, ../sass/components/_type.scss */
 article.javanese-text .text-capitalize, .javanese-text .text-capitalize {
   text-transform: capitalize;
 }
-/* line 157, ../sass/components/_type.scss */
+/* line 161, ../sass/components/_type.scss */
 article.javanese-text .text-muted, .javanese-text .text-muted {
   color: #777777;
 }
@@ -366,7 +370,7 @@ article.javanese-text a.text-danger:focus, .javanese-text a.text-danger:hover,
 .javanese-text a.text-danger:focus {
   color: #843534;
 }
-/* line 174, ../sass/components/_type.scss */
+/* line 178, ../sass/components/_type.scss */
 article.javanese-text .bg-primary, .javanese-text .bg-primary {
   color: #fff;
 }
@@ -420,20 +424,20 @@ article.javanese-text a.bg-danger:focus, .javanese-text a.bg-danger:hover,
 .javanese-text a.bg-danger:focus {
   background-color: #e4b9b9;
 }
-/* line 193, ../sass/components/_type.scss */
+/* line 197, ../sass/components/_type.scss */
 article.javanese-text .page-header, .javanese-text .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
   border-bottom: 1px solid #eeeeee;
 }
-/* line 204, ../sass/components/_type.scss */
+/* line 208, ../sass/components/_type.scss */
 article.javanese-text ul,
 article.javanese-text ol, .javanese-text ul,
 .javanese-text ol {
   margin-top: 0;
   margin-bottom: 10px;
 }
-/* line 208, ../sass/components/_type.scss */
+/* line 212, ../sass/components/_type.scss */
 article.javanese-text ul ul,
 article.javanese-text ul ol,
 article.javanese-text ol ul,
@@ -443,39 +447,39 @@ article.javanese-text ol ol, .javanese-text ul ul,
 .javanese-text ol ol {
   margin-bottom: 0;
 }
-/* line 217, ../sass/components/_type.scss */
+/* line 221, ../sass/components/_type.scss */
 article.javanese-text .list-unstyled, .javanese-text .list-unstyled {
   padding-left: 0;
   list-style: none;
 }
-/* line 223, ../sass/components/_type.scss */
+/* line 227, ../sass/components/_type.scss */
 article.javanese-text .list-inline, .javanese-text .list-inline {
   padding-left: 0;
   list-style: none;
   margin-left: -5px;
 }
-/* line 227, ../sass/components/_type.scss */
+/* line 231, ../sass/components/_type.scss */
 article.javanese-text .list-inline > li, .javanese-text .list-inline > li {
   display: inline-block;
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 235, ../sass/components/_type.scss */
+/* line 239, ../sass/components/_type.scss */
 article.javanese-text dl, .javanese-text dl {
   margin-top: 0;
   margin-bottom: 20px;
 }
-/* line 239, ../sass/components/_type.scss */
+/* line 243, ../sass/components/_type.scss */
 article.javanese-text dt,
 article.javanese-text dd, .javanese-text dt,
 .javanese-text dd {
   line-height: 2.3;
 }
-/* line 243, ../sass/components/_type.scss */
+/* line 247, ../sass/components/_type.scss */
 article.javanese-text dt, .javanese-text dt {
   font-weight: bold;
 }
-/* line 246, ../sass/components/_type.scss */
+/* line 250, ../sass/components/_type.scss */
 article.javanese-text dd, .javanese-text dd {
   margin-left: 0;
 }
@@ -489,7 +493,7 @@ article.javanese-text .dl-horizontal dd:after, .javanese-text .dl-horizontal dd:
   clear: both;
 }
 @media (min-width: 768px) {
-  /* line 261, ../sass/components/_type.scss */
+  /* line 265, ../sass/components/_type.scss */
   article.javanese-text .dl-horizontal dt, .javanese-text .dl-horizontal dt {
     float: left;
     width: 160px;
@@ -499,30 +503,30 @@ article.javanese-text .dl-horizontal dd:after, .javanese-text .dl-horizontal dd:
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  /* line 268, ../sass/components/_type.scss */
+  /* line 272, ../sass/components/_type.scss */
   article.javanese-text .dl-horizontal dd, .javanese-text .dl-horizontal dd {
     margin-left: 180px;
   }
 }
-/* line 279, ../sass/components/_type.scss */
+/* line 283, ../sass/components/_type.scss */
 article.javanese-text abbr[title],
 article.javanese-text abbr[data-original-title], .javanese-text abbr[title],
 .javanese-text abbr[data-original-title] {
   cursor: help;
   border-bottom: 1px dotted #777777;
 }
-/* line 286, ../sass/components/_type.scss */
+/* line 290, ../sass/components/_type.scss */
 article.javanese-text .initialism, .javanese-text .initialism {
   font-size: 90%;
 }
-/* line 292, ../sass/components/_type.scss */
+/* line 296, ../sass/components/_type.scss */
 article.javanese-text blockquote, .javanese-text blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
   font-size: 17.5px;
   border-left: 5px solid #eeeeee;
 }
-/* line 301, ../sass/components/_type.scss */
+/* line 305, ../sass/components/_type.scss */
 article.javanese-text blockquote p:last-child,
 article.javanese-text blockquote ul:last-child,
 article.javanese-text blockquote ol:last-child, .javanese-text blockquote p:last-child,
@@ -530,7 +534,7 @@ article.javanese-text blockquote ol:last-child, .javanese-text blockquote p:last
 .javanese-text blockquote ol:last-child {
   margin-bottom: 0;
 }
-/* line 308, ../sass/components/_type.scss */
+/* line 312, ../sass/components/_type.scss */
 article.javanese-text blockquote footer,
 article.javanese-text blockquote small,
 article.javanese-text blockquote .small, .javanese-text blockquote footer,
@@ -541,7 +545,7 @@ article.javanese-text blockquote .small, .javanese-text blockquote footer,
   line-height: 2.3;
   color: #777777;
 }
-/* line 316, ../sass/components/_type.scss */
+/* line 320, ../sass/components/_type.scss */
 article.javanese-text blockquote footer:before,
 article.javanese-text blockquote small:before,
 article.javanese-text blockquote .small:before, .javanese-text blockquote footer:before,
@@ -549,7 +553,7 @@ article.javanese-text blockquote .small:before, .javanese-text blockquote footer
 .javanese-text blockquote .small:before {
   content: '\2014 \00A0';
 }
-/* line 325, ../sass/components/_type.scss */
+/* line 329, ../sass/components/_type.scss */
 article.javanese-text .blockquote-reverse,
 article.javanese-text blockquote.pull-right, .javanese-text .blockquote-reverse,
 .javanese-text blockquote.pull-right {
@@ -559,7 +563,7 @@ article.javanese-text blockquote.pull-right, .javanese-text .blockquote-reverse,
   border-left: 0;
   text-align: right;
 }
-/* line 337, ../sass/components/_type.scss */
+/* line 341, ../sass/components/_type.scss */
 article.javanese-text .blockquote-reverse footer:before,
 article.javanese-text .blockquote-reverse small:before,
 article.javanese-text .blockquote-reverse .small:before,
@@ -573,7 +577,7 @@ article.javanese-text blockquote.pull-right .small:before, .javanese-text .block
 .javanese-text blockquote.pull-right .small:before {
   content: '';
 }
-/* line 338, ../sass/components/_type.scss */
+/* line 342, ../sass/components/_type.scss */
 article.javanese-text .blockquote-reverse footer:after,
 article.javanese-text .blockquote-reverse small:after,
 article.javanese-text .blockquote-reverse .small:after,
@@ -587,7 +591,7 @@ article.javanese-text blockquote.pull-right .small:after, .javanese-text .blockq
 .javanese-text blockquote.pull-right .small:after {
   content: '\00A0 \2014';
 }
-/* line 345, ../sass/components/_type.scss */
+/* line 349, ../sass/components/_type.scss */
 article.javanese-text address, .javanese-text address {
   margin-bottom: 20px;
   font-style: normal;
@@ -612,6 +616,10 @@ article.javanese-text .meta .small .author, .javanese-text .meta small .author,
 }
 
 /* line 60, ../sass/components/_type.scss */
+.pppppppp * {
+  -moz-font-feature-settings: "wacj", "olcj", "jvrp";
+}
+/* line 64, ../sass/components/_type.scss */
 .pppppppp h1, .pppppppp h2, .pppppppp h3, .pppppppp h4, .pppppppp h5, .pppppppp h6,
 .pppppppp .h1, .pppppppp .h2, .pppppppp .h3, .pppppppp .h4, .pppppppp .h5, .pppppppp .h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, "Ngrawit Web", sans-serif;
@@ -619,7 +627,7 @@ article.javanese-text .meta .small .author, .javanese-text .meta small .author,
   line-height: 1.5;
   color: inherit;
 }
-/* line 67, ../sass/components/_type.scss */
+/* line 71, ../sass/components/_type.scss */
 .pppppppp h1 small,
 .pppppppp h1 .small, .pppppppp h2 small,
 .pppppppp h2 .small, .pppppppp h3 small,
@@ -638,14 +646,14 @@ article.javanese-text .meta .small .author, .javanese-text .meta small .author,
   line-height: 1;
   color: #777777;
 }
-/* line 75, ../sass/components/_type.scss */
+/* line 79, ../sass/components/_type.scss */
 .pppppppp h1, .pppppppp .h1,
 .pppppppp h2, .pppppppp .h2,
 .pppppppp h3, .pppppppp .h3 {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-/* line 81, ../sass/components/_type.scss */
+/* line 85, ../sass/components/_type.scss */
 .pppppppp h1 small,
 .pppppppp h1 .small, .pppppppp .h1 small,
 .pppppppp .h1 .small,
@@ -657,14 +665,14 @@ article.javanese-text .meta .small .author, .javanese-text .meta small .author,
 .pppppppp .h3 .small {
   font-size: 65%;
 }
-/* line 87, ../sass/components/_type.scss */
+/* line 91, ../sass/components/_type.scss */
 .pppppppp h4, .pppppppp .h4,
 .pppppppp h5, .pppppppp .h5,
 .pppppppp h6, .pppppppp .h6 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 93, ../sass/components/_type.scss */
+/* line 97, ../sass/components/_type.scss */
 .pppppppp h4 small,
 .pppppppp h4 .small, .pppppppp .h4 small,
 .pppppppp .h4 .small,
@@ -676,38 +684,38 @@ article.javanese-text .meta .small .author, .javanese-text .meta small .author,
 .pppppppp .h6 .small {
   font-size: 75%;
 }
-/* line 99, ../sass/components/_type.scss */
+/* line 103, ../sass/components/_type.scss */
 .pppppppp h1, .pppppppp .h1 {
   font-size: 41px;
 }
-/* line 100, ../sass/components/_type.scss */
+/* line 104, ../sass/components/_type.scss */
 .pppppppp h2, .pppppppp .h2 {
   font-size: 34px;
 }
-/* line 101, ../sass/components/_type.scss */
+/* line 105, ../sass/components/_type.scss */
 .pppppppp h3, .pppppppp .h3 {
   font-size: 28px;
 }
-/* line 102, ../sass/components/_type.scss */
+/* line 106, ../sass/components/_type.scss */
 .pppppppp h4, .pppppppp .h4 {
   font-size: 20px;
 }
-/* line 103, ../sass/components/_type.scss */
+/* line 107, ../sass/components/_type.scss */
 .pppppppp h5, .pppppppp .h5 {
   font-size: 16px;
 }
-/* line 104, ../sass/components/_type.scss */
+/* line 108, ../sass/components/_type.scss */
 .pppppppp h6, .pppppppp .h6 {
   font-size: 14px;
 }
-/* line 110, ../sass/components/_type.scss */
+/* line 114, ../sass/components/_type.scss */
 .pppppppp p {
   font-size: 1.31em;
   line-height: 2.3;
   margin: 0 0 20px;
   letter-spacing: 0.5px;
 }
-/* line 117, ../sass/components/_type.scss */
+/* line 121, ../sass/components/_type.scss */
 .pppppppp .lead {
   margin-bottom: 20px;
   font-size: 18px;
@@ -715,55 +723,55 @@ article.javanese-text .meta .small .author, .javanese-text .meta small .author,
   line-height: 2.3;
 }
 @media (min-width: 768px) {
-  /* line 117, ../sass/components/_type.scss */
+  /* line 121, ../sass/components/_type.scss */
   .pppppppp .lead {
     font-size: 20px;
   }
 }
-/* line 133, ../sass/components/_type.scss */
+/* line 137, ../sass/components/_type.scss */
 .pppppppp small,
 .pppppppp .small {
   font-size: 75%;
 }
-/* line 138, ../sass/components/_type.scss */
+/* line 142, ../sass/components/_type.scss */
 .pppppppp mark,
 .pppppppp .mark {
   background-color: #fcf8e3;
   padding: .2em;
 }
-/* line 145, ../sass/components/_type.scss */
+/* line 149, ../sass/components/_type.scss */
 .pppppppp .text-left {
   text-align: left;
 }
-/* line 146, ../sass/components/_type.scss */
+/* line 150, ../sass/components/_type.scss */
 .pppppppp .text-right {
   text-align: right;
 }
-/* line 147, ../sass/components/_type.scss */
+/* line 151, ../sass/components/_type.scss */
 .pppppppp .text-center {
   text-align: center;
 }
-/* line 148, ../sass/components/_type.scss */
+/* line 152, ../sass/components/_type.scss */
 .pppppppp .text-justify {
   text-align: justify;
 }
-/* line 149, ../sass/components/_type.scss */
+/* line 153, ../sass/components/_type.scss */
 .pppppppp .text-nowrap {
   white-space: nowrap;
 }
-/* line 152, ../sass/components/_type.scss */
+/* line 156, ../sass/components/_type.scss */
 .pppppppp .text-lowercase {
   text-transform: lowercase;
 }
-/* line 153, ../sass/components/_type.scss */
+/* line 157, ../sass/components/_type.scss */
 .pppppppp .text-uppercase, .pppppppp .initialism {
   text-transform: uppercase;
 }
-/* line 154, ../sass/components/_type.scss */
+/* line 158, ../sass/components/_type.scss */
 .pppppppp .text-capitalize {
   text-transform: capitalize;
 }
-/* line 157, ../sass/components/_type.scss */
+/* line 161, ../sass/components/_type.scss */
 .pppppppp .text-muted {
   color: #777777;
 }
@@ -812,7 +820,7 @@ article.javanese-text .meta .small .author, .javanese-text .meta small .author,
 .pppppppp a.text-danger:focus {
   color: #843534;
 }
-/* line 174, ../sass/components/_type.scss */
+/* line 178, ../sass/components/_type.scss */
 .pppppppp .bg-primary {
   color: #fff;
 }
@@ -861,57 +869,57 @@ article.javanese-text .meta .small .author, .javanese-text .meta small .author,
 .pppppppp a.bg-danger:focus {
   background-color: #e4b9b9;
 }
-/* line 193, ../sass/components/_type.scss */
+/* line 197, ../sass/components/_type.scss */
 .pppppppp .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
   border-bottom: 1px solid #eeeeee;
 }
-/* line 204, ../sass/components/_type.scss */
+/* line 208, ../sass/components/_type.scss */
 .pppppppp ul,
 .pppppppp ol {
   margin-top: 0;
   margin-bottom: 10px;
 }
-/* line 208, ../sass/components/_type.scss */
+/* line 212, ../sass/components/_type.scss */
 .pppppppp ul ul,
 .pppppppp ul ol,
 .pppppppp ol ul,
 .pppppppp ol ol {
   margin-bottom: 0;
 }
-/* line 217, ../sass/components/_type.scss */
+/* line 221, ../sass/components/_type.scss */
 .pppppppp .list-unstyled {
   padding-left: 0;
   list-style: none;
 }
-/* line 223, ../sass/components/_type.scss */
+/* line 227, ../sass/components/_type.scss */
 .pppppppp .list-inline {
   padding-left: 0;
   list-style: none;
   margin-left: -5px;
 }
-/* line 227, ../sass/components/_type.scss */
+/* line 231, ../sass/components/_type.scss */
 .pppppppp .list-inline > li {
   display: inline-block;
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 235, ../sass/components/_type.scss */
+/* line 239, ../sass/components/_type.scss */
 .pppppppp dl {
   margin-top: 0;
   margin-bottom: 20px;
 }
-/* line 239, ../sass/components/_type.scss */
+/* line 243, ../sass/components/_type.scss */
 .pppppppp dt,
 .pppppppp dd {
   line-height: 2.3;
 }
-/* line 243, ../sass/components/_type.scss */
+/* line 247, ../sass/components/_type.scss */
 .pppppppp dt {
   font-weight: bold;
 }
-/* line 246, ../sass/components/_type.scss */
+/* line 250, ../sass/components/_type.scss */
 .pppppppp dd {
   margin-left: 0;
 }
@@ -925,7 +933,7 @@ article.javanese-text .meta .small .author, .javanese-text .meta small .author,
   clear: both;
 }
 @media (min-width: 768px) {
-  /* line 261, ../sass/components/_type.scss */
+  /* line 265, ../sass/components/_type.scss */
   .pppppppp .dl-horizontal dt {
     float: left;
     width: 160px;
@@ -935,35 +943,35 @@ article.javanese-text .meta .small .author, .javanese-text .meta small .author,
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  /* line 268, ../sass/components/_type.scss */
+  /* line 272, ../sass/components/_type.scss */
   .pppppppp .dl-horizontal dd {
     margin-left: 180px;
   }
 }
-/* line 279, ../sass/components/_type.scss */
+/* line 283, ../sass/components/_type.scss */
 .pppppppp abbr[title],
 .pppppppp abbr[data-original-title] {
   cursor: help;
   border-bottom: 1px dotted #777777;
 }
-/* line 286, ../sass/components/_type.scss */
+/* line 290, ../sass/components/_type.scss */
 .pppppppp .initialism {
   font-size: 90%;
 }
-/* line 292, ../sass/components/_type.scss */
+/* line 296, ../sass/components/_type.scss */
 .pppppppp blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
   font-size: 17.5px;
   border-left: 5px solid #eeeeee;
 }
-/* line 301, ../sass/components/_type.scss */
+/* line 305, ../sass/components/_type.scss */
 .pppppppp blockquote p:last-child,
 .pppppppp blockquote ul:last-child,
 .pppppppp blockquote ol:last-child {
   margin-bottom: 0;
 }
-/* line 308, ../sass/components/_type.scss */
+/* line 312, ../sass/components/_type.scss */
 .pppppppp blockquote footer,
 .pppppppp blockquote small,
 .pppppppp blockquote .small {
@@ -972,13 +980,13 @@ article.javanese-text .meta .small .author, .javanese-text .meta small .author,
   line-height: 2.3;
   color: #777777;
 }
-/* line 316, ../sass/components/_type.scss */
+/* line 320, ../sass/components/_type.scss */
 .pppppppp blockquote footer:before,
 .pppppppp blockquote small:before,
 .pppppppp blockquote .small:before {
   content: '\2014 \00A0';
 }
-/* line 325, ../sass/components/_type.scss */
+/* line 329, ../sass/components/_type.scss */
 .pppppppp .blockquote-reverse,
 .pppppppp blockquote.pull-right {
   padding-right: 15px;
@@ -987,7 +995,7 @@ article.javanese-text .meta .small .author, .javanese-text .meta small .author,
   border-left: 0;
   text-align: right;
 }
-/* line 337, ../sass/components/_type.scss */
+/* line 341, ../sass/components/_type.scss */
 .pppppppp .blockquote-reverse footer:before,
 .pppppppp .blockquote-reverse small:before,
 .pppppppp .blockquote-reverse .small:before,
@@ -996,7 +1004,7 @@ article.javanese-text .meta .small .author, .javanese-text .meta small .author,
 .pppppppp blockquote.pull-right .small:before {
   content: '';
 }
-/* line 338, ../sass/components/_type.scss */
+/* line 342, ../sass/components/_type.scss */
 .pppppppp .blockquote-reverse footer:after,
 .pppppppp .blockquote-reverse small:after,
 .pppppppp .blockquote-reverse .small:after,
@@ -1005,7 +1013,7 @@ article.javanese-text .meta .small .author, .javanese-text .meta small .author,
 .pppppppp blockquote.pull-right .small:after {
   content: '\00A0 \2014';
 }
-/* line 345, ../sass/components/_type.scss */
+/* line 349, ../sass/components/_type.scss */
 .pppppppp address {
   margin-bottom: 20px;
   font-style: normal;

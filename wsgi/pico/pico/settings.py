@@ -23,11 +23,18 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'j841ccg@c#y=o+%^0oc1_3-dt3j=^(e-q@hps-4)tgb*5t+31!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+
+if 'OPENSHIFT_HOMEDIR' in os.environ:
+    DEBUG = False
+else:
+    DEBUG = True
 
 TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
+
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 
 
 # Application definition
@@ -95,6 +102,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'sekizai.context_processors.sekizai',
     'django.core.context_processors.static',
     'cms.context_processors.cms_settings',
+    'pico.context_processors.site',
 )
 
 TEMPLATE_DIRS = (
@@ -159,7 +167,11 @@ INSTALLED_APPS = (
     'pico',
     'pico_user_profile',
     'pico_blog',
+    'disqus',
 )
+
+DISQUS_API_KEY = 'QdUTaDhx4lSVyrZ9xqIMwXxC5kKJfBrJ5hxPDZhlJ4wtju517jnOb3xOuW45xXWM'
+DISQUS_WEBSITE_SHORTNAME = 'aksarajawa'
 
 LANGUAGES = (
     ## Customize this
@@ -250,6 +262,8 @@ THUMBNAIL_PROCESSORS = (
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters',
 )
+
+SITE_DOMAIN = 'http://pico-novice.rhcloud.com'
 
 #BLOG_PERMALINK_URLS = {
 #    'full_date': r'^(?P<year>\d{4})/(?P<month>\d{1,2})/(?P<day>\d{1,2})/(?P<slug>\w[-\w]*)/$',
