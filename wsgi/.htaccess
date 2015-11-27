@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{HTTP:X-Forwarded-SSL} on
+RewriteCond %{REQUEST_URI} !^/admin
+RewriteRule .* http://%{HTTP_HOST}%{REQUEST_URI} [R,L]

@@ -34,6 +34,7 @@ djangocms-teaser==0.1
 djangocms-text-ckeditor==2.6.0
 djangocms-video==0.1
 easy-thumbnails==2.2
+django-disqus==0.5
 html5lib==0.9999999
 Pillow==3.0.0
 pytz==2015.6
