@@ -112,7 +112,13 @@ body {
   padding: 15px;
 }
 
-/* line 107, ../sass/pico.scss */
+/* line 85, ../sass/pico.scss */
+.pagination {
+  padding: 15px;
+  margin: 0;
+}
+
+/* line 112, ../sass/pico.scss */
 article.javanese-text, .javanese-text {
   box-sizing: border-box;
   -ms-word-break: break-all;
@@ -597,20 +603,20 @@ article.javanese-text address, .javanese-text address {
   font-style: normal;
   line-height: 2.3;
 }
-/* line 123, ../sass/pico.scss */
+/* line 128, ../sass/pico.scss */
 article.javanese-text .meta small .author,
 article.javanese-text .meta .small .author, .javanese-text .meta small .author,
 .javanese-text .meta .small .author {
   font-size: 15px;
 }
 
-/* line 130, ../sass/pico.scss */
+/* line 135, ../sass/pico.scss */
 .site-footer {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-/* line 135, ../sass/pico.scss */
+/* line 140, ../sass/pico.scss */
 .footer-content {
   padding-left: 30px;
 }

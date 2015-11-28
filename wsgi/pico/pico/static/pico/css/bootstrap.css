@@ -8,6 +8,7 @@
   font-family: 'Ngrawit Web';
   src: url("../fonts/NgrawitWeb.ttf");
   font-weight: 300;
+  -moz-font-features-settings: "jvrp", "olcj", "wacj";
 }
 @font-face {
   font-family: 'RighmaSsiddhi';
@@ -16,6 +17,7 @@
 @font-face {
   font-family: 'Aturra Web';
   src: url("../fonts/Aturra Web.ttf");
+  -moz-font-features-settings: "jvrp", "olcj", "wacj";
 }
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /* line 9, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_normalize.scss */
@@ -6293,8 +6295,8 @@ tbody.collapse.in {
   line-height: 1.42857143;
   text-decoration: none;
   color: #FFD580;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #808080;
+  border: 1px solid transparent;
   margin-left: -1px;
 }
 /* line 25, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_pagination.scss */
@@ -6315,9 +6317,9 @@ tbody.collapse.in {
 .pagination > li > span:hover,
 .pagination > li > span:focus {
   z-index: 3;
-  color: #ffbc33;
-  background-color: #eeeeee;
-  border-color: #ddd;
+  color: #fff;
+  background-color: #FF80AA;
+  border-color: #FF80AA;
 }
 /* line 52, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_pagination.scss */
 .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
@@ -6325,9 +6327,9 @@ tbody.collapse.in {
 .pagination > .active > span:hover,
 .pagination > .active > span:focus {
   z-index: 2;
-  color: #fff;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  color: #777;
+  background-color: transparent;
+  border-color: transparent;
   cursor: default;
 }
 /* line 64, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_pagination.scss */
@@ -6338,8 +6340,8 @@ tbody.collapse.in {
 .pagination > .disabled > a:hover,
 .pagination > .disabled > a:focus {
   color: #777777;
-  background-color: #fff;
-  border-color: #ddd;
+  background-color: #404040;
+  border-color: #404040;
   cursor: not-allowed;
 }
 
@@ -6408,15 +6410,15 @@ tbody.collapse.in {
 .pager li > span {
   display: inline-block;
   padding: 5px 14px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #808080;
+  border: 1px solid transparent;
   border-radius: 15px;
 }
 /* line 23, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_pager.scss */
 .pager li > a:hover,
 .pager li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: #FF80AA;
 }
 /* line 31, ../../../.gem/ruby/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_pager.scss */
 .pager .next > a,
@@ -6434,7 +6436,7 @@ tbody.collapse.in {
 .pager .disabled > a:focus,
 .pager .disabled > span {
   color: #777777;
-  background-color: #fff;
+  background-color: #808080;
   cursor: not-allowed;
 }
 

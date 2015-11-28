@@ -1,10 +1,42 @@
 {% extends "pico_blog/base.html" %}
 {% load cms_tags disqus_tags %}
+
 {% block content_blog %}
 	<div class="blog-articles">
 		{% disqus_dev %}
 		{% for post in post_list %}
 			{% include "pico_blog/includes/blog_item.html" %}
 		{% endfor %}
+		{% if is_paginated %}
+		<div class="page-navigation">
+			<div class="row">
+				<div class="pagination col-lg-12 col md-12 col-sm-12">
+					<nav>
+						<ul class="pagination">
+							<li class="disabled"><span>Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span></li>
+							{% if page_obj.has_previous %}
+							<li>
+								<a href="?page={{ page_obj.previous_page_number }}" aria-label="Previous">
+							{% else %}
+							<li class="disabled">
+								<a href="#">
+							{% endif %}
+							<span aria-hidden="true">&laquo;</span></a></li>
+							{% for i in page_obj.paginator.page_range %}
+								<li {% if page_obj.number == i %}class="active" {% endif %}><a href="?page={{ i }}">{{ i }}</a></li>
+							{% endfor %}
+							{% if page_obj.has_next %}
+							<li>
+								<a href="?page={{ page_obj.next_page_number }}" aria-label="Previous">
+							{% else %}
+							<li class="disabled"><a href="#">
+							{% endif %}
+							<span aria-hidden="true">&raquo;</span></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		{% endif %}
 	</div>
 {% endblock %}

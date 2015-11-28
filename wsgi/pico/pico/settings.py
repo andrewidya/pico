@@ -24,17 +24,16 @@ SECRET_KEY = 'j841ccg@c#y=o+%^0oc1_3-dt3j=^(e-q@hps-4)tgb*5t+31!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-if 'OPENSHIFT_HOMEDIR' in os.environ:
-    DEBUG = False
-else:
-    DEBUG = True
+DEBUG = True
 
 TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
+
+if 'OPENSHIFT_HOMEDIR' in os.environ:
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
 
 
 # Application definition

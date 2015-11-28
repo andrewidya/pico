@@ -6,5 +6,5 @@ setup(name='Pico',
       author='Andry Widya Putra',
       author_email='andrywidyaputra@gmail.com',
       url='http://www.python.org/sigs/distutils-sig/',
-      install_requires=['Django==1.6.11', 'django-disqus==0.5'],
+      install_requires=['Django==1.6.11'],
      )

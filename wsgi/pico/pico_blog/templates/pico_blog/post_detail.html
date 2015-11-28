@@ -1,8 +1,22 @@
 {% extends "pico_blog/base.html" %}
 {% load cms_tags disqus_tags %}
+
+{% block meta_header %}
+    {% if post.meta_title %}
+    <title>{{ post.meta_title }}
+    {% else %}
+    <title>{{ post.title }}
+    {% endif %}
+    </title>
+
+    {% if post.meta_description %}
+    <meta name="description" content="{{ post.meta_description }}">
+    {% else %}
+    <meta name="description" content="Halaman bertuliskan aksara jawa">
+    {% endif %}
+{% endblock meta_header %}
+
 {% block header %}{% endblock header %}
-
-
 
 {% block content_blog %}
 
