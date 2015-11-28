@@ -79,7 +79,7 @@ body {
 }
 /* line 59, ../sass/pico.scss */
 .site-cover .site-title {
-  margin: 0;
+  margin-bottom: 20px;
   font-size: 4em;
   color: #FF80AA;
 }
@@ -93,6 +93,7 @@ body {
 .site-cover .description {
   margin: 5px 0 0 0;
   font-family: "Aturra Web";
+  text-shadow: 1px 1px 1px black;
 }
 @media (max-width: 640px) {
   /* line 67, ../sass/pico.scss */
@@ -101,24 +102,24 @@ body {
   }
 }
 
-/* line 76, ../sass/pico.scss */
+/* line 77, ../sass/pico.scss */
 .site-main {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
 }
-/* line 80, ../sass/pico.scss */
+/* line 81, ../sass/pico.scss */
 .site-main .site-main-inner, .site-main .content {
   padding: 15px;
 }
 
-/* line 85, ../sass/pico.scss */
+/* line 86, ../sass/pico.scss */
 .pagination {
   padding: 15px;
   margin: 0;
 }
 
-/* line 112, ../sass/pico.scss */
+/* line 113, ../sass/pico.scss */
 article.javanese-text, .javanese-text {
   box-sizing: border-box;
   -ms-word-break: break-all;
@@ -603,20 +604,20 @@ article.javanese-text address, .javanese-text address {
   font-style: normal;
   line-height: 2.3;
 }
-/* line 128, ../sass/pico.scss */
+/* line 129, ../sass/pico.scss */
 article.javanese-text .meta small .author,
 article.javanese-text .meta .small .author, .javanese-text .meta small .author,
 .javanese-text .meta .small .author {
   font-size: 15px;
 }
 
-/* line 135, ../sass/pico.scss */
+/* line 136, ../sass/pico.scss */
 .site-footer {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-/* line 140, ../sass/pico.scss */
+/* line 141, ../sass/pico.scss */
 .footer-content {
   padding-left: 30px;
 }

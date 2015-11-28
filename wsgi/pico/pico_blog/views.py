@@ -13,6 +13,7 @@ class PostListView(ListView):
 	queryset = Post.objects.all()
 	view_url_name = 'pico_blog:post-list'
 	template_name = 'pico_blog/post_list.html'
+	paginate_by = 6
 
 	def get_context_data(self, **kwargs):
 		context = super(PostListView, self).get_context_data(**kwargs)
@@ -34,7 +35,7 @@ class CategoryListView(ListView):
 	context_object_name = 'post_list'
 	template_name = 'pico_blog/category_list.html'
 	view_url_name = 'pico_blog:category-post-list'
-	paginate_by = 2
+	paginate_by = 6
 
 	def get_queryset(self):
 		qs = super(CategoryListView, self).get_queryset()
