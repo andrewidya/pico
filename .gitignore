@@ -35,5 +35,7 @@
 ._*
 .Spotlight-V100
 .Trashes
+
+wsgi/pico/static/*
 ehthumbs.db
 Thumbs.db
