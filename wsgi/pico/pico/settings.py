@@ -24,16 +24,17 @@ SECRET_KEY = 'j841ccg@c#y=o+%^0oc1_3-dt3j=^(e-q@hps-4)tgb*5t+31!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = True
-
-TEMPLATE_DEBUG = True
-
-ALLOWED_HOSTS = []
-
 
 if 'OPENSHIFT_HOMEDIR' in os.environ:
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
+    DEBUG = False
+    TEMPLATE_DEBUG = False
+    ALLOWED_HOSTS = ['pico-novice.rhcloud.com']
+else:
+    DEBUG = True
+    TEMPLATE_DEBUG = True
+    ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -51,7 +52,7 @@ WSGI_APPLICATION = 'pico.wsgi.application'
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = 'jv'
 
 TIME_ZONE = 'Asia/Jakarta'
 
@@ -160,7 +161,7 @@ INSTALLED_APPS = (
     #'admin_enhancer',
     # end blog supportr
     # Aldryn bootstrap 3
-    'aldryn_bootstrap3',
+    #'aldryn_bootstrap3',
     'south',
     #'reversion',
     'pico',
@@ -174,8 +175,11 @@ DISQUS_WEBSITE_SHORTNAME = 'aksarajawa'
 
 LANGUAGES = (
     ## Customize this
+    ('jv', gettext('jv')),
     ('en', gettext('en')),
 )
+
+DEFAULT_LANGUAGE = 1
 
 CMS_LANGUAGES = {
     ## Customize this
@@ -191,6 +195,12 @@ CMS_LANGUAGES = {
             'hide_untranslated': False,
             'name': gettext('en'),
             'redirect_on_fallback': True,
+        },
+        {
+            'public': True,
+            'code': 'jv',
+            'name': gettext('jv'),
+            'fallbacks': ['en']
         },
     ],
 }

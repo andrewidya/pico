@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'Ngrawit Web';
+  src: url("../fonts/NgrawitWeb.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'RighmaSsiddhi';
+  src: url("../fonts/RighmaSsiddhi.ttf");
+}
+/* line 12, ../assets/sass/comming_soon.scss */
+h1 {
+  font-family: 'Ngrawit Web', open-sans;
+  font-weight: inherit;
+}
+
+/* line 17, ../assets/sass/comming_soon.scss */
+p {
+  font-family: 'RighmaSsiddhi';
+  font-weight: inherit;
+  font-size: 1.2em;
+}
+
+/* line 23, ../assets/sass/comming_soon.scss */
+span {
+  font-family: 'RighmaSsiddhi';
+}
+
+/* line 27, ../assets/sass/comming_soon.scss */
+.cover-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+/* line 33, ../assets/sass/comming_soon.scss */
+.cover-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 38, ../assets/sass/comming_soon.scss */
+.cover-inner {
+  width: 100%;
+  text-align: center;
+}
+/* line 41, ../assets/sass/comming_soon.scss */
+.cover-inner img {
+  max-width: 100%;
+}
+/* line 45, ../assets/sass/comming_soon.scss */
+.cover-inner .greetings {
+  font-size: 2.5em;
+  line-height: 1em;
+}
+/* line 50, ../assets/sass/comming_soon.scss */
+.cover-inner .bottom {
+  margin: 10px 0 0 0;
+}

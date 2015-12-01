@@ -8,11 +8,18 @@ from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
+handler404 = 'pico.views.page_not_found'
+#handler500 = 'pico.views.server_error'
+
 admin.autodiscover()
+
+#urlpatterns = patterns('',
+#    url(r'^i18n/', include('django.conf.urls.i18n')),
+#)
 
 urlpatterns = i18n_patterns('',
     url(r'^admin/', include(admin.site.urls)),  # NOQA
-    url(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': {'cmspages': CMSSitemap}}),
+    url(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': {'cmspages': CMSSitemap}}, name='sitemap-xml'),
     url(r'^select2/', include('django_select2.urls')),
     url(r'^', include('cms.urls')),
     url(r'^taggit_autosuggest/', include('taggit_autosuggest.urls')),

@@ -93,7 +93,7 @@ class AuthorPostListView(ListView):
 	def get_queryset(self):
 		qs = super(AuthorPostListView, self).get_queryset()
 		if 'username' in self.kwargs:
-			qs = qs.filter(**{'author__%s' % User.USERNAME_FIELD: self.kwargs['username']})
+			qs = qs.filter(author__username=self.kwargs['username'])
 		return qs
 
 	def get_context_data(self, **kwargs):
