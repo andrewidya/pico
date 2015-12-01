@@ -176,7 +176,6 @@ DISQUS_WEBSITE_SHORTNAME = 'aksarajawa'
 LANGUAGES = (
     ## Customize this
     ('jv', gettext('jv')),
-    ('en', gettext('en')),
 )
 
 DEFAULT_LANGUAGE = 1
@@ -191,16 +190,10 @@ CMS_LANGUAGES = {
     1: [
         {
             'public': True,
-            'code': 'en',
-            'hide_untranslated': False,
-            'name': gettext('en'),
-            'redirect_on_fallback': True,
-        },
-        {
-            'public': True,
             'code': 'jv',
+            'hide_untranslated': False,
             'name': gettext('jv'),
-            'fallbacks': ['en']
+            'redirect_on_fallback': True,
         },
     ],
 }
@@ -261,7 +254,7 @@ META_USE_SITES = True
 
 PARLER_LANGUAGES = {
     1: (
-        {'code': 'en',},
+        {'code': 'jv',},
     ),
 }
 
