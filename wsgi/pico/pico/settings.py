@@ -32,8 +32,8 @@ if 'OPENSHIFT_HOMEDIR' in os.environ:
     TEMPLATE_DEBUG = False
     ALLOWED_HOSTS = ['pico-novice.rhcloud.com']
 else:
-    DEBUG = True
-    TEMPLATE_DEBUG = True
+    DEBUG = False
+    TEMPLATE_DEBUG = False
     ALLOWED_HOSTS = ['*']
 
 
@@ -56,7 +56,7 @@ LANGUAGE_CODE = 'jv'
 
 TIME_ZONE = 'Asia/Jakarta'
 
-USE_I18N = True
+USE_I18N = False
 USE_L10N = True
 USE_TZ = True
 
@@ -112,7 +112,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'pico.middleware.ForceLangMiddleware',
+    #'pico.middleware.ForceLangMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
