@@ -24,17 +24,16 @@ SECRET_KEY = 'j841ccg@c#y=o+%^0oc1_3-dt3j=^(e-q@hps-4)tgb*5t+31!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
+DEBUG = True
+
+TEMPLATE_DEBUG = True
+
+ALLOWED_HOSTS = []
+
 
 if 'OPENSHIFT_HOMEDIR' in os.environ:
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
-    DEBUG = False
-    TEMPLATE_DEBUG = False
-    ALLOWED_HOSTS = ['pico-novice.rhcloud.com']
-else:
-    DEBUG = False
-    TEMPLATE_DEBUG = False
-    ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -57,7 +56,9 @@ LANGUAGE_CODE = 'jv'
 TIME_ZONE = 'Asia/Jakarta'
 
 USE_I18N = True
+
 USE_L10N = True
+
 USE_TZ = True
 
 
@@ -112,14 +113,13 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    #'pico.middleware.ForceLangMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'cms.middleware.user.CurrentUserMiddleware',
     'cms.middleware.page.CurrentPageMiddleware',
     'cms.middleware.toolbar.ToolbarMiddleware',
-    'cms.middleware.language.LanguageCookieMiddleware',
+    'cms.middleware.language.LanguageCookieMiddleware'
 )
 
 INSTALLED_APPS = (
@@ -174,7 +174,7 @@ DISQUS_WEBSITE_SHORTNAME = 'aksarajawa'
 
 LANGUAGES = (
     ## Customize this
-    ('jv', gettext('Javanese')),
+    ('jv', gettext('jv')),
 )
 
 CMS_LANGUAGES = {
@@ -249,11 +249,11 @@ SOUTH_MIGRATION_MODULES = {
 META_SITE_PROTOCOL = 'http'
 META_USE_SITES = True
 
-#PARLER_LANGUAGES = {
-#    1: (
-#        {'code': 'jv',},
-#    ),
-#}
+PARLER_LANGUAGES = {
+    1: (
+        {'code': 'jv',},
+    ),
+}
 
 THUMBNAIL_PROCESSORS = (
     'easy_thumbnails.processors.colorspace',
