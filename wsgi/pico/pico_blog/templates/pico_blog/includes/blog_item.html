@@ -20,7 +20,11 @@
             <h3><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
         </header>
         <div class="post-entry">
+            {% if post.has_post_intro %}
+            <p>{{ post.post_intro }}</p>
+            {% else %}
             <p>{{ post.post_content|truncatechars:100|safe }}</p>
+            {% endif %}
         </div>
         <span><a href="{{ post.get_absolute_url }}">ꦧꦸꦏꦭꦚ꧀ꦗꦸꦠ꧀</a></span>
     </article>

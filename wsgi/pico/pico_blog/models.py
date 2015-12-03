@@ -91,3 +91,13 @@ class Post(models.Model):
 		if self.javansese_text:
 			return True
 		return False
+
+	def has_post_intro(self):
+		if self.post_intro:
+			return True
+		return False
+
+	def has_feature_image(self):
+		if self.feature_image:
+			return True
+		return False

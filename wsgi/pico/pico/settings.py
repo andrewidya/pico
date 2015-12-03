@@ -51,11 +51,11 @@ WSGI_APPLICATION = 'pico.wsgi.application'
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
-LANGUAGE_CODE = 'jv'
+LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'Asia/Jakarta'
 
-USE_I18N = True
+USE_I18N = False
 
 USE_L10N = True
 
@@ -174,7 +174,7 @@ DISQUS_WEBSITE_SHORTNAME = 'aksarajawa'
 
 LANGUAGES = (
     ## Customize this
-    ('jv', gettext('jv')),
+    ('en', gettext('en')),
 )
 
 CMS_LANGUAGES = {
@@ -187,9 +187,9 @@ CMS_LANGUAGES = {
     1: [
         {
             'public': True,
-            'code': 'jv',
+            'code': 'en',
             'hide_untranslated': False,
-            'name': gettext('Javanese'),
+            'name': gettext('en'),
             'redirect_on_fallback': True,
         },
     ],
@@ -251,7 +251,7 @@ META_USE_SITES = True
 
 PARLER_LANGUAGES = {
     1: (
-        {'code': 'jv',},
+        {'code': 'en',},
     ),
 }
 

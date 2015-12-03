@@ -1,9 +1,12 @@
 from django.shortcuts import render
 from django.views.generic import DetailView, ListView
-from pico_blog.models import Post, Category
 from django.contrib.auth import get_user_model
-from django.core.urlresolvers import resolve
+from django.core.urlresolvers import resolve, reverse
+from django.http import HttpResponseRedirect, HttpResponse
 from django.utils.timezone import now
+from django.shortcuts import render_to_response, render
+from pico_blog.forms import SearchForm
+from pico_blog.models import Post, Category
 
 User = get_user_model()
 
@@ -100,3 +103,18 @@ class AuthorPostListView(ListView):
 		kwargs['author'] = User.objects.get(**{User.USERNAME_FIELD: self.kwargs.get('username')})
 		context = super(AuthorPostListView, self).get_context_data(**kwargs)
 		return context
+
+def search(request):
+	if request.method == 'GET':
+		form = SearchForm(request.GET)
+		if form.is_valid():
+			data = form.cleaned_data
+
+	post_list = Post.objects.filter(slug__icontains=data['search_input'])
+	return render(request, 'pico_blog/search_results.html', {'post_list': post_list, 'query': data['search_input']})
+	#return HttpResponseRedirect(reverse('pico_blog:results'))
+
+def results(request):
+	post_list = Post.objects.filter(slug__icontains=global_query)
+	return render(request, 'pico_blog/search_results.html', {'post_list': post_list})
+
