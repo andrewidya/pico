@@ -11,5 +11,4 @@ urlpatterns = patterns (
 	url(r'^tag/(?P<tag>[-\w]+)/$', TagListView.as_view(), name='tag-post-list'),
 	url(r'^author/(?P<username>[\w\.@+-]+)/$', AuthorPostListView.as_view(), name='author-post-list'),
 	url(r'^search/$', search, name='search'),
-	url(r'^results/$', results, name='results'),
 )

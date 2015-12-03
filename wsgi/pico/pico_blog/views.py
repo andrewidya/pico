@@ -112,9 +112,4 @@ def search(request):
 
 	post_list = Post.objects.filter(slug__icontains=data['search_input'])
 	return render(request, 'pico_blog/search_results.html', {'post_list': post_list, 'query': data['search_input']})
-	#return HttpResponseRedirect(reverse('pico_blog:results'))
-
-def results(request):
-	post_list = Post.objects.filter(slug__icontains=global_query)
-	return render(request, 'pico_blog/search_results.html', {'post_list': post_list})
 
