@@ -27,8 +27,8 @@ SECRET_KEY = 'j841ccg@c#y=o+%^0oc1_3-dt3j=^(e-q@hps-4)tgb*5t+31!'
 if 'OPENSHIFT_HOMEDIR' in os.environ:
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
-    DEBUG = True
-    TEMPLATE_DEBUG = True
+    DEBUG = False
+    TEMPLATE_DEBUG = False
     ALLOWED_HOSTS = ['http://pico-novice.rhcloud.com', 'https://pico-novice.rhcloud.com']
 else:
     DEBUG = True
