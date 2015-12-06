@@ -20,36 +20,41 @@ body {
 }
 
 /* line 9, ../sass/pico.scss */
+.dropdown-menu {
+  padding: 0px;
+}
+
+/* line 13, ../sass/pico.scss */
 .navbar-fixed-top {
   box-shadow: 0 0 1px 1px rgba(125, 125, 125, 0.1);
 }
 
-/* line 13, ../sass/pico.scss */
+/* line 17, ../sass/pico.scss */
 .navbar-nav {
   font-size: 1.31em;
 }
 
-/* line 17, ../sass/pico.scss */
+/* line 21, ../sass/pico.scss */
 .dropdown-menu {
   background: #808080;
 }
-/* line 19, ../sass/pico.scss */
+/* line 23, ../sass/pico.scss */
 .dropdown-menu li > a {
   color: white;
   font-size: 1.31em;
   letter-spacing: 1px;
 }
-/* line 25, ../sass/pico.scss */
+/* line 29, ../sass/pico.scss */
 .dropdown-menu > li > a:hover {
   background: #FF80AA;
 }
 
-/* line 30, ../sass/pico.scss */
+/* line 34, ../sass/pico.scss */
 .dropdown-menu > li > a {
   padding: 2px 20px 15px 20px;
 }
 
-/* line 34, ../sass/pico.scss */
+/* line 38, ../sass/pico.scss */
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
   color: #fff;
   text-decoration: none;
@@ -57,19 +62,19 @@ body {
   background-color: #FF80AA;
 }
 
-/* line 41, ../sass/pico.scss */
+/* line 45, ../sass/pico.scss */
 .navigation {
   max-width: 900px;
   margin: 0 auto;
 }
 
-/* line 46, ../sass/pico.scss */
+/* line 50, ../sass/pico.scss */
 .site-cover {
   height: 100vh;
   background-size: cover;
   position: relative;
 }
-/* line 51, ../sass/pico.scss */
+/* line 55, ../sass/pico.scss */
 .site-cover .site-feature {
   position: absolute;
   top: 50%;
@@ -77,49 +82,49 @@ body {
   transform: translate(-50%, -50%);
   margin: 0 auto;
 }
-/* line 59, ../sass/pico.scss */
+/* line 63, ../sass/pico.scss */
 .site-cover .site-title {
   margin-bottom: 20px;
   font-size: 4em;
   color: #FF80AA;
 }
 @media (max-width: 640px) {
-  /* line 59, ../sass/pico.scss */
+  /* line 63, ../sass/pico.scss */
   .site-cover .site-title {
     font-size: 2em;
   }
 }
-/* line 67, ../sass/pico.scss */
+/* line 71, ../sass/pico.scss */
 .site-cover .description {
   margin: 5px 0 0 0;
   font-family: "Aturra Web";
   text-shadow: 1px 1px 1px black;
 }
 @media (max-width: 640px) {
-  /* line 67, ../sass/pico.scss */
+  /* line 71, ../sass/pico.scss */
   .site-cover .description {
     font-size: 1.5em;
   }
 }
 
-/* line 77, ../sass/pico.scss */
+/* line 81, ../sass/pico.scss */
 .site-main {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
 }
-/* line 81, ../sass/pico.scss */
+/* line 85, ../sass/pico.scss */
 .site-main .site-main-inner, .site-main .content {
   padding: 15px;
 }
 
-/* line 86, ../sass/pico.scss */
+/* line 90, ../sass/pico.scss */
 .pagination {
   padding: 15px;
   margin: 0;
 }
 
-/* line 113, ../sass/pico.scss */
+/* line 117, ../sass/pico.scss */
 article.javanese-text, .javanese-text {
   box-sizing: border-box;
   -ms-word-break: break-all;
@@ -130,6 +135,7 @@ article.javanese-text, .javanese-text {
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
+  margin-bottom: 25px;
 }
 /* line 60, ../sass/components/_type.scss */
 article.javanese-text *, .javanese-text * {
@@ -604,20 +610,20 @@ article.javanese-text address, .javanese-text address {
   font-style: normal;
   line-height: 2.3;
 }
-/* line 129, ../sass/pico.scss */
+/* line 133, ../sass/pico.scss */
 article.javanese-text .meta small .author,
 article.javanese-text .meta .small .author, .javanese-text .meta small .author,
 .javanese-text .meta .small .author {
   font-size: 15px;
 }
 
-/* line 136, ../sass/pico.scss */
+/* line 141, ../sass/pico.scss */
 .site-footer {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-/* line 141, ../sass/pico.scss */
+/* line 146, ../sass/pico.scss */
 .footer-content {
   padding-left: 30px;
 }

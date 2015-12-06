@@ -1,12 +1,15 @@
 {% extends "pico_blog/base.html" %}
 {% load cms_tags %}
 
+{% block header %}{% endblock header %}
+
 {% block content_blog %}
 	<div class="blog-articles">
+		<div class="row">
 		{% for post in post_list %}
 			{% include "pico_blog/includes/blog_item.html" %}
 		{% endfor %}
-
+		</div>
 		{% if is_paginated %}
 		<div class="page-navigation">
 			<div class="row">

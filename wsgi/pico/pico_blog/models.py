@@ -3,11 +3,13 @@ from django.contrib.auth.models import User
 from django.utils.encoding import python_2_unicode_compatible
 from django.utils.text import slugify
 from django.utils.translation import ugettext_lazy as _
+from django.utils import timezone
+from django.core.urlresolvers import reverse
+from django.conf import settings
 from djangocms_text_ckeditor.fields import HTMLField
 from filer.fields.image import FilerImageField
 from taggit_autosuggest.managers import TaggableManager
-from django.utils import timezone
-from django.core.urlresolvers import reverse
+
 # Create your models here.
 
 @python_2_unicode_compatible
@@ -101,3 +103,6 @@ class Post(models.Model):
 		if self.feature_image:
 			return True
 		return False
+
+class BlogSetting(models.Model):
+	pass

@@ -7,6 +7,7 @@ from django.utils.timezone import now
 from django.shortcuts import render_to_response, render
 from pico_blog.forms import SearchForm
 from pico_blog.models import Post, Category
+from pico_blog.utils.search import get_query
 
 User = get_user_model()
 
@@ -108,8 +109,8 @@ def search(request):
 	if request.method == 'GET':
 		form = SearchForm(request.GET)
 		if form.is_valid():
-			data = form.cleaned_data
+			query_string = form.cleaned_data['search_input']
 
-	post_list = Post.objects.filter(slug__icontains=data['search_input'])
-	return render(request, 'pico_blog/search_results.html', {'post_list': post_list, 'query': data['search_input']})
-
+	entry_query = get_query(query_string, ['title', 'slug', 'post_content'])
+	post_list = Post.objects.filter(entry_query).order_by('-date_published')
+	return render(request, 'pico_blog/search_results.html', {'post_list': post_list, 'query': query_string})

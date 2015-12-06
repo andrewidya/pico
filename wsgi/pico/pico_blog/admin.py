@@ -5,6 +5,7 @@ from pico_blog.models import Category, Post
 
 class CategoryAdmin(admin.ModelAdmin):
 	list_display = ('name', 'slug', 'date_created', 'date_modified')
+	actions = None
 
 class PostAdmin(admin.ModelAdmin):
 	list_display = ('title', 'author', 'date_created', 'date_modified', 'publish')

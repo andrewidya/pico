@@ -7,7 +7,7 @@
 
 # Activate VirtualEnv in order to use the correct libraries
 
-pip install django-disqus==0.5
+#pip install django-disqus==0.5
 
 if [ ! -d $OPENSHIFT_DATA_DIR/media ]; then
 mkdir $OPENSHIFT_DATA_DIR/media

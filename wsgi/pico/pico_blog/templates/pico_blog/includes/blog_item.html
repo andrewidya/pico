@@ -1,4 +1,4 @@
-{% load cms_tags %}
+{% load cms_tags pico_blog_tags %}
 
 <div class="content col-lg-4 col-md-4 col-sm-12">
     <article {% if post.is_javanese %} class="javanese-text" {% endif %}>
@@ -29,3 +29,6 @@
         <span><a href="{{ post.get_absolute_url }}">ꦧꦸꦏꦭꦚ꧀ꦗꦸꦠ꧀</a></span>
     </article>
 </div>
+{% if forloop.counter|is_mod:3 %}
+</div><div class="row">
+{% endif %}

@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, url
-from pico_blog.views import PostListView, PostDetailView, CategoryListView, PostArchiveListView, TagListView, AuthorPostListView, search, results
+from pico_blog.views import PostListView, PostDetailView, CategoryListView, PostArchiveListView, TagListView, AuthorPostListView, search
 
 urlpatterns = patterns (
 	'',
