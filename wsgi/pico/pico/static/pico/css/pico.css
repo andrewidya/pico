@@ -268,7 +268,7 @@ article.javanese-text h6, article.javanese-text .h6, .javanese-text h6, .javanes
 article.javanese-text p, .javanese-text p {
   font-size: 1.31em;
   line-height: 2.3;
-  margin: 0 0 4.6 em;
+  margin: 0 0 2.5em;
   letter-spacing: 0.5px;
 }
 /* line 121, ../sass/components/_type.scss */
@@ -725,7 +725,7 @@ article.javanese-text .meta .small .author, .javanese-text .meta small .author,
 .pppppppp p {
   font-size: 1.31em;
   line-height: 2.3;
-  margin: 0 0 4.6 em;
+  margin: 0 0 2.5em;
   letter-spacing: 0.5px;
 }
 /* line 121, ../sass/components/_type.scss */
