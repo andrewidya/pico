@@ -29,7 +29,7 @@ if 'OPENSHIFT_HOMEDIR' in os.environ:
     CSRF_COOKIE_SECURE = True
     DEBUG = False
     TEMPLATE_DEBUG = False
-    ALLOWED_HOSTS = []
+    ALLOWED_HOSTS = ['pico-novice.rhcloud.com']
 else:
     DEBUG = True
     TEMPLATE_DEBUG = True
